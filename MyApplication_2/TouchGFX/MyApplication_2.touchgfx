@@ -43,7 +43,7 @@
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionCover",
               "ScreenTransitionDirection": "East",
-              "ActionComponent": "Screen1"
+              "ActionComponent": "Level"
             }
           },
           {
@@ -103,7 +103,7 @@
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionCover",
               "ScreenTransitionDirection": "East",
-              "ActionComponent": "Screen1"
+              "ActionComponent": "Level"
             }
           },
           {
@@ -142,13 +142,21 @@
             "RelativeFilename": "hp.png"
           },
           {
-            "Type": "Image",
-            "Name": "tulong",
-            "X": 105,
-            "Y": 260,
-            "Width": 30,
-            "Height": 45,
-            "RelativeFilename": "tulong.png"
+            "Type": "Line",
+            "Name": "line1",
+            "Y": 216,
+            "Width": 240,
+            "Height": 15,
+            "Color": {
+              "Red": 255,
+              "Green": 244,
+              "Blue": 226
+            },
+            "StartY": 2.0,
+            "EndX": 240.0,
+            "EndY": 2.0,
+            "LineWidth": 2.0,
+            "LineEndingStyle": "Round"
           },
           {
             "Type": "Image",
@@ -178,21 +186,22 @@
             "RelativeFilename": "straw1.png"
           },
           {
-            "Type": "Line",
-            "Name": "line1",
-            "Y": 216,
-            "Width": 240,
+            "Type": "Image",
+            "Name": "star",
+            "X": 13,
+            "Y": 145,
+            "Width": 15,
             "Height": 15,
-            "Color": {
-              "Red": 255,
-              "Green": 244,
-              "Blue": 226
-            },
-            "StartY": 2.0,
-            "EndX": 240.0,
-            "EndY": 2.0,
-            "LineWidth": 2.0,
-            "LineEndingStyle": "Round"
+            "RelativeFilename": "star.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "stone",
+            "X": 13,
+            "Y": 116,
+            "Width": 10,
+            "Height": 13,
+            "RelativeFilename": "rock.png"
           },
           {
             "Type": "Image",
@@ -205,12 +214,21 @@
           },
           {
             "Type": "Image",
-            "Name": "image1",
+            "Name": "soobin",
             "X": 10,
             "Y": 70,
             "Width": 20,
             "Height": 30,
             "RelativeFilename": "soobin.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "tulong",
+            "X": 105,
+            "Y": 260,
+            "Width": 30,
+            "Height": 45,
+            "RelativeFilename": "tulong.png"
           }
         ],
         "Interactions": []
@@ -270,6 +288,80 @@
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "Screen1"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Level",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "level.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "X": 95,
+            "Y": 215,
+            "Width": 50,
+            "Height": 50,
+            "Pressed": "pausebtm.png",
+            "Released": "pausebtm.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen1"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "GameOver",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "gameover",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "gameover.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "replay",
+            "X": 24,
+            "Y": 222,
+            "Width": 192,
+            "Height": 40,
+            "Pressed": "replay.png",
+            "Released": "replay.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "replay"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "HomeScreen"
             }
           }
         ]

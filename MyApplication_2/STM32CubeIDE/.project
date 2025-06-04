@@ -320,6 +320,16 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/common/FrontendApplication.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/gui/GameOverPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/gameover_screen/GameOverPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/GameOverView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/gameover_screen/GameOverView.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/gui/HomeScreenPresenter.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/homescreen_screen/HomeScreenPresenter.cpp</locationURI>
@@ -338,6 +348,16 @@
 			<name>Application/User/gui/IntroView.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/intro_screen/IntroView.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/LevelPresenter.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/level_screen/LevelPresenter.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/gui/LevelView.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/gui/src/level_screen/LevelView.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/gui/Model.cpp</name>
@@ -455,6 +475,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/GameOverViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/gameover_screen/GameOverViewBase.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/HomeScreenViewBase.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/homescreen_screen/HomeScreenViewBase.cpp</locationURI>
@@ -463,6 +488,11 @@
 			<name>Application/User/generated/IntroViewBase.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/intro_screen/IntroViewBase.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/LevelViewBase.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/gui_generated/src/level_screen/LevelViewBase.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/PauseViewBase.cpp</name>
@@ -515,6 +545,11 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_continue.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_gameover.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_gameover.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_home.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_home.cpp</locationURI>
@@ -530,14 +565,39 @@
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_instruction.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_level.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_level.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_pause.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_pause.cpp</locationURI>
 		</link>
 		<link>
+			<name>Application/User/generated/image_pausebtm.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_pausebtm.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_replay.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_replay.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_rock.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_rock.cpp</locationURI>
+		</link>
+		<link>
 			<name>Application/User/generated/image_soobin.cpp</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_soobin.cpp</locationURI>
+		</link>
+		<link>
+			<name>Application/User/generated/image_star.cpp</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/TouchGFX/generated/images/src/image_star.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/generated/image_start.cpp</name>

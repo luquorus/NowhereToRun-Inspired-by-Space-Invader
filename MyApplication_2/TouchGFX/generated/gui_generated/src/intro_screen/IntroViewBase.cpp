@@ -42,9 +42,9 @@ void IntroViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& src)
     if (&src == &start2)
     {
         //Interaction1
-        //When start2 clicked change screen to Screen1
-        //Go to Screen1 with screen transition towards East
-        application().gotoScreen1ScreenCoverTransitionEast();
+        //When start2 clicked change screen to Level
+        //Go to Level with screen transition towards East
+        application().gotoLevelScreenCoverTransitionEast();
     }
     if (&src == &back)
     {

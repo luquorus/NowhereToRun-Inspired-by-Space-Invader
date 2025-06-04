@@ -31,9 +31,12 @@ public:
     void gotoIntroScreenCoverTransitionSouth();
 
     // Screen1
-    void gotoScreen1ScreenCoverTransitionEast();
-
     void gotoScreen1ScreenNoTransition();
+
+    void gotoScreen1ScreenSlideTransitionEast();
+
+    // Level
+    void gotoLevelScreenCoverTransitionEast();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
@@ -51,9 +54,12 @@ protected:
     void gotoIntroScreenCoverTransitionSouthImpl();
 
     // Screen1
-    void gotoScreen1ScreenCoverTransitionEastImpl();
-
     void gotoScreen1ScreenNoTransitionImpl();
+
+    void gotoScreen1ScreenSlideTransitionEastImpl();
+
+    // Level
+    void gotoLevelScreenCoverTransitionEastImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

@@ -81,6 +81,12 @@ build/MINGW32_NT-6.2/generated/gui_generated/src/common/FrontendApplicationBase.
  gui/include/gui/pause_screen/PauseView.hpp \
  generated/gui_generated/include/gui_generated/pause_screen/PauseViewBase.hpp \
  gui/include/gui/pause_screen/PausePresenter.hpp \
+ gui/include/gui/level_screen/LevelView.hpp \
+ generated/gui_generated/include/gui_generated/level_screen/LevelViewBase.hpp \
+ gui/include/gui/level_screen/LevelPresenter.hpp \
+ gui/include/gui/gameover_screen/GameOverView.hpp \
+ generated/gui_generated/include/gui_generated/gameover_screen/GameOverViewBase.hpp \
+ gui/include/gui/gameover_screen/GameOverPresenter.hpp \
  generated/texts/include/texts/TextKeysAndLanguages.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp
 
@@ -247,6 +253,18 @@ gui/include/gui/pause_screen/PauseView.hpp:
 generated/gui_generated/include/gui_generated/pause_screen/PauseViewBase.hpp:
 
 gui/include/gui/pause_screen/PausePresenter.hpp:
+
+gui/include/gui/level_screen/LevelView.hpp:
+
+generated/gui_generated/include/gui_generated/level_screen/LevelViewBase.hpp:
+
+gui/include/gui/level_screen/LevelPresenter.hpp:
+
+gui/include/gui/gameover_screen/GameOverView.hpp:
+
+generated/gui_generated/include/gui_generated/gameover_screen/GameOverViewBase.hpp:
+
+gui/include/gui/gameover_screen/GameOverPresenter.hpp:
 
 generated/texts/include/texts/TextKeysAndLanguages.hpp:
 

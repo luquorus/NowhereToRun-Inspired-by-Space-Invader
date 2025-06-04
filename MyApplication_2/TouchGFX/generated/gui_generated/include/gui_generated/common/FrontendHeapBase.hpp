@@ -23,6 +23,10 @@
 #include <gui/screen1_screen/Screen1Presenter.hpp>
 #include <gui/pause_screen/PauseView.hpp>
 #include <gui/pause_screen/PausePresenter.hpp>
+#include <gui/level_screen/LevelView.hpp>
+#include <gui/level_screen/LevelPresenter.hpp>
+#include <gui/gameover_screen/GameOverView.hpp>
+#include <gui/gameover_screen/GameOverPresenter.hpp>
 
 
 /**
@@ -49,7 +53,9 @@ public:
             touchgfx::meta::TypeList< IntroView,
             touchgfx::meta::TypeList< Screen1View,
             touchgfx::meta::TypeList< PauseView,
-            touchgfx::meta::Nil > > >
+            touchgfx::meta::TypeList< LevelView,
+            touchgfx::meta::TypeList< GameOverView,
+            touchgfx::meta::Nil > > > > >
             > GeneratedViewTypes;
 
     /**
@@ -65,7 +71,9 @@ public:
             touchgfx::meta::TypeList< IntroPresenter,
             touchgfx::meta::TypeList< Screen1Presenter,
             touchgfx::meta::TypeList< PausePresenter,
-            touchgfx::meta::Nil > > >
+            touchgfx::meta::TypeList< LevelPresenter,
+            touchgfx::meta::TypeList< GameOverPresenter,
+            touchgfx::meta::Nil > > > > >
             > GeneratedPresenterTypes;
 
     /**
@@ -82,7 +90,8 @@ public:
             touchgfx::meta::TypeList< CoverTransition<SOUTH>,
             touchgfx::meta::TypeList< CoverTransition<WEST>,
             touchgfx::meta::TypeList< SlideTransition<WEST>,
-            touchgfx::meta::Nil > > > >
+            touchgfx::meta::TypeList< SlideTransition<EAST>,
+            touchgfx::meta::Nil > > > > >
             > GeneratedTransitionTypes;
 
     /**

@@ -30,14 +30,16 @@ protected:
     touchgfx::Box __background;
     touchgfx::Image screen1;
     touchgfx::Image hp;
-    touchgfx::Image tulong;
+    touchgfx::Line line1;
+    touchgfx::PainterRGB565 line1Painter;
     touchgfx::Image straw3;
     touchgfx::Image straw2;
     touchgfx::Image straw1;
-    touchgfx::Line line1;
-    touchgfx::PainterRGB565 line1Painter;
+    touchgfx::Image star;
+    touchgfx::Image stone;
     touchgfx::Image c7;
-    touchgfx::Image image1;
+    touchgfx::Image soobin;
+    touchgfx::Image tulong;
 
 private:
 

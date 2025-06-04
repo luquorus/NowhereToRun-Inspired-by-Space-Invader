@@ -106,6 +106,12 @@ build/MINGW32_NT-6.2/simulator/main.o: simulator/main.cpp \
  gui/include/gui/pause_screen/PauseView.hpp \
  generated/gui_generated/include/gui_generated/pause_screen/PauseViewBase.hpp \
  gui/include/gui/pause_screen/PausePresenter.hpp \
+ gui/include/gui/level_screen/LevelView.hpp \
+ generated/gui_generated/include/gui_generated/level_screen/LevelViewBase.hpp \
+ gui/include/gui/level_screen/LevelPresenter.hpp \
+ gui/include/gui/gameover_screen/GameOverView.hpp \
+ generated/gui_generated/include/gui_generated/gameover_screen/GameOverViewBase.hpp \
+ gui/include/gui/gameover_screen/GameOverPresenter.hpp \
  generated/gui_generated/include/gui_generated/common/SimConstants.hpp \
  ../Middlewares/ST/touchgfx/framework/include/platform/driver/touch/SDL2TouchController.hpp \
  generated/simulator/include/simulator/mainBase.hpp
@@ -323,6 +329,18 @@ gui/include/gui/pause_screen/PauseView.hpp:
 generated/gui_generated/include/gui_generated/pause_screen/PauseViewBase.hpp:
 
 gui/include/gui/pause_screen/PausePresenter.hpp:
+
+gui/include/gui/level_screen/LevelView.hpp:
+
+generated/gui_generated/include/gui_generated/level_screen/LevelViewBase.hpp:
+
+gui/include/gui/level_screen/LevelPresenter.hpp:
+
+gui/include/gui/gameover_screen/GameOverView.hpp:
+
+generated/gui_generated/include/gui_generated/gameover_screen/GameOverViewBase.hpp:
+
+gui/include/gui/gameover_screen/GameOverPresenter.hpp:
 
 generated/gui_generated/include/gui_generated/common/SimConstants.hpp:
 

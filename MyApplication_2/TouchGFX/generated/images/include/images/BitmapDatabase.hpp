@@ -9,18 +9,24 @@
 const uint16_t BITMAP_BACK_ID = 0;
 const uint16_t BITMAP_C7_ID = 1;
 const uint16_t BITMAP_CONTINUE_ID = 2;
-const uint16_t BITMAP_HOME_ID = 3;
-const uint16_t BITMAP_HOMESCREEN_ID = 4;
-const uint16_t BITMAP_HP_ID = 5;
-const uint16_t BITMAP_INSTRUCTION_ID = 6;
-const uint16_t BITMAP_INSTRUCTIONSCREEN_ID = 7;
-const uint16_t BITMAP_PAUSE_ID = 8;
-const uint16_t BITMAP_SCREEN1_ID = 9;
-const uint16_t BITMAP_SOOBIN_ID = 10;
-const uint16_t BITMAP_START_ID = 11;
-const uint16_t BITMAP_START2_ID = 12;
-const uint16_t BITMAP_STRAW1_ID = 13;
-const uint16_t BITMAP_TULONG_ID = 14;
+const uint16_t BITMAP_GAMEOVER_ID = 3;
+const uint16_t BITMAP_HOME_ID = 4;
+const uint16_t BITMAP_HOMESCREEN_ID = 5;
+const uint16_t BITMAP_HP_ID = 6;
+const uint16_t BITMAP_INSTRUCTION_ID = 7;
+const uint16_t BITMAP_INSTRUCTIONSCREEN_ID = 8;
+const uint16_t BITMAP_LEVEL_ID = 9;
+const uint16_t BITMAP_PAUSE_ID = 10;
+const uint16_t BITMAP_PAUSEBTM_ID = 11;
+const uint16_t BITMAP_REPLAY_ID = 12;
+const uint16_t BITMAP_ROCK_ID = 13;
+const uint16_t BITMAP_SCREEN1_ID = 14;
+const uint16_t BITMAP_SOOBIN_ID = 15;
+const uint16_t BITMAP_STAR_ID = 16;
+const uint16_t BITMAP_START_ID = 17;
+const uint16_t BITMAP_START2_ID = 18;
+const uint16_t BITMAP_STRAW1_ID = 19;
+const uint16_t BITMAP_TULONG_ID = 20;
 
 namespace BitmapDatabase
 {

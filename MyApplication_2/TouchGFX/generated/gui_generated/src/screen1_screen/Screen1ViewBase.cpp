@@ -22,9 +22,14 @@ Screen1ViewBase::Screen1ViewBase()
     hp.setBitmap(touchgfx::Bitmap(BITMAP_HP_ID));
     add(hp);
 
-    tulong.setXY(105, 260);
-    tulong.setBitmap(touchgfx::Bitmap(BITMAP_TULONG_ID));
-    add(tulong);
+    line1.setPosition(0, 216, 240, 15);
+    line1Painter.setColor(touchgfx::Color::getColorFromRGB(255, 244, 226));
+    line1.setPainter(line1Painter);
+    line1.setStart(0, 2);
+    line1.setEnd(240, 2);
+    line1.setLineWidth(2);
+    line1.setLineEndingStyle(touchgfx::Line::ROUND_CAP_ENDING);
+    add(line1);
 
     straw3.setXY(90, 222);
     straw3.setBitmap(touchgfx::Bitmap(BITMAP_STRAW1_ID));
@@ -38,22 +43,25 @@ Screen1ViewBase::Screen1ViewBase()
     straw1.setBitmap(touchgfx::Bitmap(BITMAP_STRAW1_ID));
     add(straw1);
 
-    line1.setPosition(0, 216, 240, 15);
-    line1Painter.setColor(touchgfx::Color::getColorFromRGB(255, 244, 226));
-    line1.setPainter(line1Painter);
-    line1.setStart(0, 2);
-    line1.setEnd(240, 2);
-    line1.setLineWidth(2);
-    line1.setLineEndingStyle(touchgfx::Line::ROUND_CAP_ENDING);
-    add(line1);
+    star.setXY(13, 145);
+    star.setBitmap(touchgfx::Bitmap(BITMAP_STAR_ID));
+    add(star);
+
+    stone.setXY(13, 116);
+    stone.setBitmap(touchgfx::Bitmap(BITMAP_ROCK_ID));
+    add(stone);
 
     c7.setXY(10, 35);
     c7.setBitmap(touchgfx::Bitmap(BITMAP_C7_ID));
     add(c7);
 
-    image1.setXY(10, 70);
-    image1.setBitmap(touchgfx::Bitmap(BITMAP_SOOBIN_ID));
-    add(image1);
+    soobin.setXY(10, 70);
+    soobin.setBitmap(touchgfx::Bitmap(BITMAP_SOOBIN_ID));
+    add(soobin);
+
+    tulong.setXY(105, 260);
+    tulong.setBitmap(touchgfx::Bitmap(BITMAP_TULONG_ID));
+    add(tulong);
 }
 
 Screen1ViewBase::~Screen1ViewBase()

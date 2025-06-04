@@ -107,6 +107,12 @@ build/MINGW32_NT-6.2/generated/simulator/src/mainBase.o: \
  gui/include/gui/pause_screen/PauseView.hpp \
  generated/gui_generated/include/gui_generated/pause_screen/PauseViewBase.hpp \
  gui/include/gui/pause_screen/PausePresenter.hpp \
+ gui/include/gui/level_screen/LevelView.hpp \
+ generated/gui_generated/include/gui_generated/level_screen/LevelViewBase.hpp \
+ gui/include/gui/level_screen/LevelPresenter.hpp \
+ gui/include/gui/gameover_screen/GameOverView.hpp \
+ generated/gui_generated/include/gui_generated/gameover_screen/GameOverViewBase.hpp \
+ gui/include/gui/gameover_screen/GameOverPresenter.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterLinearGradient.hpp \
  ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp \
@@ -334,6 +340,18 @@ gui/include/gui/pause_screen/PauseView.hpp:
 generated/gui_generated/include/gui_generated/pause_screen/PauseViewBase.hpp:
 
 gui/include/gui/pause_screen/PausePresenter.hpp:
+
+gui/include/gui/level_screen/LevelView.hpp:
+
+generated/gui_generated/include/gui_generated/level_screen/LevelViewBase.hpp:
+
+gui/include/gui/level_screen/LevelPresenter.hpp:
+
+gui/include/gui/gameover_screen/GameOverView.hpp:
+
+generated/gui_generated/include/gui_generated/gameover_screen/GameOverViewBase.hpp:
+
+gui/include/gui/gameover_screen/GameOverPresenter.hpp:
 
 ../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp:
 
