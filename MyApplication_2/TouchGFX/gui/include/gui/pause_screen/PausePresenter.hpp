@@ -1,0 +1,36 @@
+#ifndef PAUSEPRESENTER_HPP
+#define PAUSEPRESENTER_HPP
+
+#include <gui/model/ModelListener.hpp>
+#include <mvp/Presenter.hpp>
+
+using namespace touchgfx;
+
+class PauseView;
+
+class PausePresenter : public touchgfx::Presenter, public ModelListener
+{
+public:
+    PausePresenter(PauseView& v);
+
+    /**
+     * The activate function is called automatically when this screen is "switched in"
+     * (ie. made active). Initialization logic can be placed here.
+     */
+    virtual void activate();
+
+    /**
+     * The deactivate function is called automatically when this screen is "switched out"
+     * (ie. made inactive). Teardown functionality can be placed here.
+     */
+    virtual void deactivate();
+
+    virtual ~PausePresenter() {}
+
+private:
+    PausePresenter();
+
+    PauseView& view;
+};
+
+#endif // PAUSEPRESENTER_HPP

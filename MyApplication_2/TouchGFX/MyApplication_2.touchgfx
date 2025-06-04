@@ -1,0 +1,338 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "HomeScreen",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "homescreen",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "HomeScreen.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "start",
+            "X": 24,
+            "Y": 281,
+            "Width": 192,
+            "Height": 39,
+            "Pressed": "start.png",
+            "Released": "start.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "instruction",
+            "X": 205,
+            "Y": 285,
+            "Width": 30,
+            "Height": 30,
+            "Pressed": "instruction.png",
+            "Released": "instruction.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "start"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen1"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "instruction"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "South",
+              "ActionComponent": "Intro"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Intro",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "intro",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "InstructionScreen.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "start2",
+            "X": 51,
+            "Y": 55,
+            "Width": 139,
+            "Height": 28,
+            "Pressed": "start2.png",
+            "Released": "start2.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "back",
+            "X": 12,
+            "Y": 280,
+            "Width": 30,
+            "Height": 30,
+            "Pressed": "back.png",
+            "Released": "back.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "start2"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen1"
+            }
+          },
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "back"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "HomeScreen"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Screen1",
+        "CanvasBufferSize": 3600,
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "screen1",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "Screen1.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "hp",
+            "X": 45,
+            "Y": 300,
+            "Width": 20,
+            "Height": 20,
+            "RelativeFilename": "hp.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "tulong",
+            "X": 105,
+            "Y": 260,
+            "Width": 30,
+            "Height": 45,
+            "RelativeFilename": "tulong.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "straw3",
+            "X": 90,
+            "Y": 222,
+            "Width": 60,
+            "Height": 37,
+            "RelativeFilename": "straw1.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "straw2",
+            "X": 170,
+            "Y": 222,
+            "Width": 60,
+            "Height": 37,
+            "RelativeFilename": "straw1.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "straw1",
+            "X": 10,
+            "Y": 222,
+            "Width": 60,
+            "Height": 37,
+            "RelativeFilename": "straw1.png"
+          },
+          {
+            "Type": "Line",
+            "Name": "line1",
+            "Y": 216,
+            "Width": 240,
+            "Height": 15,
+            "Color": {
+              "Red": 255,
+              "Green": 244,
+              "Blue": 226
+            },
+            "StartY": 2.0,
+            "EndX": 240.0,
+            "EndY": 2.0,
+            "LineWidth": 2.0,
+            "LineEndingStyle": "Round"
+          },
+          {
+            "Type": "Image",
+            "Name": "c7",
+            "X": 10,
+            "Y": 35,
+            "Width": 20,
+            "Height": 30,
+            "RelativeFilename": "c7.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "X": 10,
+            "Y": 70,
+            "Width": 20,
+            "Height": 30,
+            "RelativeFilename": "soobin.png"
+          }
+        ],
+        "Interactions": []
+      },
+      {
+        "Name": "Pause",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "pause",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "pause.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "home",
+            "X": 24,
+            "Y": 130,
+            "Width": 192,
+            "Height": 39,
+            "Pressed": "home.png",
+            "Released": "home.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "contBtn",
+            "X": 24,
+            "Y": 175,
+            "Width": 192,
+            "Height": 39,
+            "Pressed": "continue.png",
+            "Released": "continue.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "home"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "HomeScreen"
+            }
+          },
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "contBtn"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Screen1"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "MyApplication_2",
+    "Resolution": {
+      "Width": 240,
+      "Height": 320
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "HomeScreen",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 240,
+        "Height": 320
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "CompileTargetCommandOverride": "make -f ../gcc/Makefile -j8",
+    "FlashTargetCommandOverride": "make -f ../gcc/Makefile flash",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Portrait",
+    "Family": "STM32F4",
+    "SubFamily": "STM32F429/439",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m4",
+    "ProjectFile": "../STM32F429I_DISCO_REV_D01.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": [
+      "CWRVector",
+      "VectorFonts"
+    ]
+  },
+  "Version": "4.25.0",
+  "CreatedBy": "4.25.0"
+}
