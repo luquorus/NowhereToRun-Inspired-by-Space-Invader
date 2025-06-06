@@ -11,6 +11,7 @@
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/canvas/Line.hpp>
 #include <touchgfx/widgets/canvas/PainterRGB565.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
 {
@@ -29,7 +30,9 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::Image screen1;
-    touchgfx::Image hp;
+    touchgfx::Image hp1;
+    touchgfx::Image hp2;
+    touchgfx::Image hp3;
     touchgfx::Line line1;
     touchgfx::PainterRGB565 line1Painter;
     touchgfx::Image straw3;
@@ -37,9 +40,28 @@ protected:
     touchgfx::Image straw1;
     touchgfx::Image star;
     touchgfx::Image stone;
-    touchgfx::Image c7;
-    touchgfx::Image soobin;
+    touchgfx::Image sb9;
+    touchgfx::Image sb8;
+    touchgfx::Image sb7;
+    touchgfx::Image sb6;
+    touchgfx::Image sb5;
+    touchgfx::Image sb4;
+    touchgfx::Image sb3;
+    touchgfx::Image sb2;
+    touchgfx::Image sb1;
+    touchgfx::Image c71;
+    touchgfx::Image c72;
+    touchgfx::Image c73;
+    touchgfx::Image c74;
+    touchgfx::Image c75;
+    touchgfx::Image c76;
+    touchgfx::Image c77;
+    touchgfx::Image c78;
+    touchgfx::Image c79;
     touchgfx::Image tulong;
+    touchgfx::TextAreaWithOneWildcard highScoreText;
+    touchgfx::TextAreaWithOneWildcard scoreText;
+    touchgfx::TextAreaWithOneWildcard levelText;
 
 private:
 

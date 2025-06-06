@@ -4,6 +4,7 @@
 #include <gui_generated/homescreen_screen/HomeScreenViewBase.hpp>
 #include <touchgfx/Color.hpp>
 #include <images/BitmapDatabase.hpp>
+#include <texts/TextKeysAndLanguages.hpp>
 
 HomeScreenViewBase::HomeScreenViewBase() :
     buttonCallback(this, &HomeScreenViewBase::buttonCallbackHandler)
@@ -25,6 +26,12 @@ HomeScreenViewBase::HomeScreenViewBase() :
     instruction.setBitmaps(touchgfx::Bitmap(BITMAP_INSTRUCTION_ID), touchgfx::Bitmap(BITMAP_INSTRUCTION_ID));
     instruction.setAction(buttonCallback);
     add(instruction);
+
+    highScoreText.setPosition(99, 29, 45, 15);
+    highScoreText.setColor(touchgfx::Color::getColorFromRGB(255, 253, 228));
+    highScoreText.setLinespacing(0);
+    highScoreText.setTypedText(touchgfx::TypedText(T_HIGHSCORETEXT));
+    add(highScoreText);
 }
 
 HomeScreenViewBase::~HomeScreenViewBase()

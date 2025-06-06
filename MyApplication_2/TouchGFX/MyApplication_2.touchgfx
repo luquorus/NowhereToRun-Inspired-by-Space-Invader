@@ -30,6 +30,22 @@
             "Height": 30,
             "Pressed": "instruction.png",
             "Released": "instruction.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "highScoreText",
+            "X": 99,
+            "Y": 29,
+            "Width": 45,
+            "Height": 15,
+            "TextId": "highScoreText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 253,
+              "Blue": 228
+            },
+            "Wildcard1": {}
           }
         ],
         "Interactions": [
@@ -134,8 +150,26 @@
           },
           {
             "Type": "Image",
-            "Name": "hp",
+            "Name": "hp1",
             "X": 45,
+            "Y": 300,
+            "Width": 20,
+            "Height": 20,
+            "RelativeFilename": "hp.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "hp2",
+            "X": 67,
+            "Y": 300,
+            "Width": 20,
+            "Height": 20,
+            "RelativeFilename": "hp.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "hp3",
+            "X": 89,
             "Y": 300,
             "Width": 20,
             "Height": 20,
@@ -144,7 +178,7 @@
           {
             "Type": "Line",
             "Name": "line1",
-            "Y": 216,
+            "Y": 230,
             "Width": 240,
             "Height": 15,
             "Color": {
@@ -161,35 +195,35 @@
           {
             "Type": "Image",
             "Name": "straw3",
-            "X": 90,
-            "Y": 222,
-            "Width": 60,
-            "Height": 37,
+            "X": 100,
+            "Y": 235,
+            "Width": 40,
+            "Height": 25,
             "RelativeFilename": "straw1.png"
           },
           {
             "Type": "Image",
             "Name": "straw2",
-            "X": 170,
-            "Y": 222,
-            "Width": 60,
-            "Height": 37,
+            "X": 190,
+            "Y": 235,
+            "Width": 40,
+            "Height": 25,
             "RelativeFilename": "straw1.png"
           },
           {
             "Type": "Image",
             "Name": "straw1",
             "X": 10,
-            "Y": 222,
-            "Width": 60,
-            "Height": 37,
+            "Y": 235,
+            "Width": 40,
+            "Height": 25,
             "RelativeFilename": "straw1.png"
           },
           {
             "Type": "Image",
             "Name": "star",
-            "X": 13,
-            "Y": 145,
+            "X": 15,
+            "Y": 182,
             "Width": 15,
             "Height": 15,
             "RelativeFilename": "star.png"
@@ -197,15 +231,96 @@
           {
             "Type": "Image",
             "Name": "stone",
-            "X": 13,
-            "Y": 116,
+            "X": 52,
+            "Y": 182,
             "Width": 10,
             "Height": 13,
             "RelativeFilename": "rock.png"
           },
           {
             "Type": "Image",
-            "Name": "c7",
+            "Name": "sb9",
+            "X": 210,
+            "Y": 99,
+            "Width": 20,
+            "Height": 30,
+            "RelativeFilename": "soobin.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "sb8",
+            "X": 130,
+            "Y": 99,
+            "Width": 20,
+            "Height": 30,
+            "RelativeFilename": "soobin.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "sb7",
+            "X": 50,
+            "Y": 99,
+            "Width": 20,
+            "Height": 30,
+            "RelativeFilename": "soobin.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "sb6",
+            "X": 170,
+            "Y": 67,
+            "Width": 20,
+            "Height": 30,
+            "RelativeFilename": "soobin.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "sb5",
+            "X": 90,
+            "Y": 67,
+            "Width": 20,
+            "Height": 30,
+            "RelativeFilename": "soobin.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "sb4",
+            "X": 10,
+            "Y": 67,
+            "Width": 20,
+            "Height": 30,
+            "RelativeFilename": "soobin.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "sb3",
+            "X": 210,
+            "Y": 35,
+            "Width": 20,
+            "Height": 30,
+            "RelativeFilename": "soobin.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "sb2",
+            "X": 130,
+            "Y": 35,
+            "Width": 20,
+            "Height": 30,
+            "RelativeFilename": "soobin.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "sb1",
+            "X": 50,
+            "Y": 35,
+            "Width": 20,
+            "Height": 30,
+            "RelativeFilename": "soobin.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "c71",
             "X": 10,
             "Y": 35,
             "Width": 20,
@@ -214,21 +329,133 @@
           },
           {
             "Type": "Image",
-            "Name": "soobin",
-            "X": 10,
-            "Y": 70,
+            "Name": "c72",
+            "X": 90,
+            "Y": 35,
             "Width": 20,
             "Height": 30,
-            "RelativeFilename": "soobin.png"
+            "RelativeFilename": "c7.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "c73",
+            "X": 170,
+            "Y": 35,
+            "Width": 20,
+            "Height": 30,
+            "RelativeFilename": "c7.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "c74",
+            "X": 50,
+            "Y": 67,
+            "Width": 20,
+            "Height": 30,
+            "RelativeFilename": "c7.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "c75",
+            "X": 130,
+            "Y": 67,
+            "Width": 20,
+            "Height": 30,
+            "RelativeFilename": "c7.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "c76",
+            "X": 210,
+            "Y": 67,
+            "Width": 20,
+            "Height": 30,
+            "RelativeFilename": "c7.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "c77",
+            "X": 10,
+            "Y": 99,
+            "Width": 20,
+            "Height": 30,
+            "RelativeFilename": "c7.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "c78",
+            "X": 90,
+            "Y": 99,
+            "Width": 20,
+            "Height": 30,
+            "RelativeFilename": "c7.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "c79",
+            "X": 170,
+            "Y": 99,
+            "Width": 20,
+            "Height": 30,
+            "RelativeFilename": "c7.png"
           },
           {
             "Type": "Image",
             "Name": "tulong",
             "X": 105,
-            "Y": 260,
+            "Y": 261,
             "Width": 30,
             "Height": 45,
             "RelativeFilename": "tulong.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "highScoreText",
+            "X": 7,
+            "Y": 20,
+            "Width": 45,
+            "Height": 15,
+            "TextId": "highScoreText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 253,
+              "Blue": 228
+            },
+            "Wildcard1": {}
+          },
+          {
+            "Type": "TextArea",
+            "Name": "scoreText",
+            "X": 190,
+            "Y": 20,
+            "Width": 45,
+            "Height": 15,
+            "TextId": "scoreText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 253,
+              "Blue": 228
+            },
+            "Wildcard1": {}
+          },
+          {
+            "Type": "TextArea",
+            "Name": "levelText",
+            "X": 134,
+            "Y": 4,
+            "Width": 10,
+            "Height": 18,
+            "TextId": "levelText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 253,
+              "Blue": 230
+            },
+            "AutoSize": true,
+            "Wildcard1": {}
           }
         ],
         "Interactions": []

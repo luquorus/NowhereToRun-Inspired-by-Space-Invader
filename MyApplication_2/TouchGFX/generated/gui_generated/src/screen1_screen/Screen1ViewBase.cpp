@@ -5,6 +5,7 @@
 #include <touchgfx/canvas_widget_renderer/CanvasWidgetRenderer.hpp>
 #include <touchgfx/Color.hpp>
 #include <images/BitmapDatabase.hpp>
+#include <texts/TextKeysAndLanguages.hpp>
 
 Screen1ViewBase::Screen1ViewBase()
 {
@@ -18,11 +19,19 @@ Screen1ViewBase::Screen1ViewBase()
     screen1.setBitmap(touchgfx::Bitmap(BITMAP_SCREEN1_ID));
     add(screen1);
 
-    hp.setXY(45, 300);
-    hp.setBitmap(touchgfx::Bitmap(BITMAP_HP_ID));
-    add(hp);
+    hp1.setXY(45, 300);
+    hp1.setBitmap(touchgfx::Bitmap(BITMAP_HP_ID));
+    add(hp1);
 
-    line1.setPosition(0, 216, 240, 15);
+    hp2.setXY(67, 300);
+    hp2.setBitmap(touchgfx::Bitmap(BITMAP_HP_ID));
+    add(hp2);
+
+    hp3.setXY(89, 300);
+    hp3.setBitmap(touchgfx::Bitmap(BITMAP_HP_ID));
+    add(hp3);
+
+    line1.setPosition(0, 230, 240, 15);
     line1Painter.setColor(touchgfx::Color::getColorFromRGB(255, 244, 226));
     line1.setPainter(line1Painter);
     line1.setStart(0, 2);
@@ -31,37 +40,119 @@ Screen1ViewBase::Screen1ViewBase()
     line1.setLineEndingStyle(touchgfx::Line::ROUND_CAP_ENDING);
     add(line1);
 
-    straw3.setXY(90, 222);
+    straw3.setXY(100, 235);
     straw3.setBitmap(touchgfx::Bitmap(BITMAP_STRAW1_ID));
     add(straw3);
 
-    straw2.setXY(170, 222);
+    straw2.setXY(190, 235);
     straw2.setBitmap(touchgfx::Bitmap(BITMAP_STRAW1_ID));
     add(straw2);
 
-    straw1.setXY(10, 222);
+    straw1.setXY(10, 235);
     straw1.setBitmap(touchgfx::Bitmap(BITMAP_STRAW1_ID));
     add(straw1);
 
-    star.setXY(13, 145);
+    star.setXY(15, 182);
     star.setBitmap(touchgfx::Bitmap(BITMAP_STAR_ID));
     add(star);
 
-    stone.setXY(13, 116);
+    stone.setXY(52, 182);
     stone.setBitmap(touchgfx::Bitmap(BITMAP_ROCK_ID));
     add(stone);
 
-    c7.setXY(10, 35);
-    c7.setBitmap(touchgfx::Bitmap(BITMAP_C7_ID));
-    add(c7);
+    sb9.setXY(210, 99);
+    sb9.setBitmap(touchgfx::Bitmap(BITMAP_SOOBIN_ID));
+    add(sb9);
 
-    soobin.setXY(10, 70);
-    soobin.setBitmap(touchgfx::Bitmap(BITMAP_SOOBIN_ID));
-    add(soobin);
+    sb8.setXY(130, 99);
+    sb8.setBitmap(touchgfx::Bitmap(BITMAP_SOOBIN_ID));
+    add(sb8);
 
-    tulong.setXY(105, 260);
+    sb7.setXY(50, 99);
+    sb7.setBitmap(touchgfx::Bitmap(BITMAP_SOOBIN_ID));
+    add(sb7);
+
+    sb6.setXY(170, 67);
+    sb6.setBitmap(touchgfx::Bitmap(BITMAP_SOOBIN_ID));
+    add(sb6);
+
+    sb5.setXY(90, 67);
+    sb5.setBitmap(touchgfx::Bitmap(BITMAP_SOOBIN_ID));
+    add(sb5);
+
+    sb4.setXY(10, 67);
+    sb4.setBitmap(touchgfx::Bitmap(BITMAP_SOOBIN_ID));
+    add(sb4);
+
+    sb3.setXY(210, 35);
+    sb3.setBitmap(touchgfx::Bitmap(BITMAP_SOOBIN_ID));
+    add(sb3);
+
+    sb2.setXY(130, 35);
+    sb2.setBitmap(touchgfx::Bitmap(BITMAP_SOOBIN_ID));
+    add(sb2);
+
+    sb1.setXY(50, 35);
+    sb1.setBitmap(touchgfx::Bitmap(BITMAP_SOOBIN_ID));
+    add(sb1);
+
+    c71.setXY(10, 35);
+    c71.setBitmap(touchgfx::Bitmap(BITMAP_C7_ID));
+    add(c71);
+
+    c72.setXY(90, 35);
+    c72.setBitmap(touchgfx::Bitmap(BITMAP_C7_ID));
+    add(c72);
+
+    c73.setXY(170, 35);
+    c73.setBitmap(touchgfx::Bitmap(BITMAP_C7_ID));
+    add(c73);
+
+    c74.setXY(50, 67);
+    c74.setBitmap(touchgfx::Bitmap(BITMAP_C7_ID));
+    add(c74);
+
+    c75.setXY(130, 67);
+    c75.setBitmap(touchgfx::Bitmap(BITMAP_C7_ID));
+    add(c75);
+
+    c76.setXY(210, 67);
+    c76.setBitmap(touchgfx::Bitmap(BITMAP_C7_ID));
+    add(c76);
+
+    c77.setXY(10, 99);
+    c77.setBitmap(touchgfx::Bitmap(BITMAP_C7_ID));
+    add(c77);
+
+    c78.setXY(90, 99);
+    c78.setBitmap(touchgfx::Bitmap(BITMAP_C7_ID));
+    add(c78);
+
+    c79.setXY(170, 99);
+    c79.setBitmap(touchgfx::Bitmap(BITMAP_C7_ID));
+    add(c79);
+
+    tulong.setXY(105, 261);
     tulong.setBitmap(touchgfx::Bitmap(BITMAP_TULONG_ID));
     add(tulong);
+
+    highScoreText.setPosition(7, 20, 45, 15);
+    highScoreText.setColor(touchgfx::Color::getColorFromRGB(255, 253, 228));
+    highScoreText.setLinespacing(0);
+    highScoreText.setTypedText(touchgfx::TypedText(T_HIGHSCORETEXT));
+    add(highScoreText);
+
+    scoreText.setPosition(190, 20, 45, 15);
+    scoreText.setColor(touchgfx::Color::getColorFromRGB(255, 253, 228));
+    scoreText.setLinespacing(0);
+    scoreText.setTypedText(touchgfx::TypedText(T_SCORETEXT));
+    add(scoreText);
+
+    levelText.setXY(134, 4);
+    levelText.setColor(touchgfx::Color::getColorFromRGB(255, 253, 230));
+    levelText.setLinespacing(0);
+    levelText.setTypedText(touchgfx::TypedText(T_LEVELTEXT));
+    add(levelText);
 }
 
 Screen1ViewBase::~Screen1ViewBase()
