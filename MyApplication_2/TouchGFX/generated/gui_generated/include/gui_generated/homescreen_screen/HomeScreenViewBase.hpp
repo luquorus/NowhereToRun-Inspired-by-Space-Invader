@@ -10,6 +10,7 @@
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/Button.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 
 class HomeScreenViewBase : public touchgfx::View<HomeScreenPresenter>
 {
@@ -30,6 +31,7 @@ protected:
     touchgfx::Image homescreen;
     touchgfx::Button start;
     touchgfx::Button instruction;
+    touchgfx::TextAreaWithOneWildcard highScoreText;
 
 private:
 

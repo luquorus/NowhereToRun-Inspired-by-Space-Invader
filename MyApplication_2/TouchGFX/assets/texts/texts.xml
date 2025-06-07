@@ -5,11 +5,22 @@
   </Languages>
   <Texts>
     <TextGroup Id="Group1" />
-    <TextGroup Id="Unsorted" />
+    <TextGroup Id="Unsorted">
+      <Text Id="levelText" Alignment="Left" TypographyId="level">
+        <Translation Language="GB">&lt;%d&gt;</Translation>
+      </Text>
+      <Text Id="scoreText" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">&lt;%d&gt;</Translation>
+      </Text>
+      <Text Id="highScoreText" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">&lt;%d&gt;</Translation>
+      </Text>
+    </TextGroup>
   </Texts>
   <Typographies>
     <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
     <Typography Id="Small" Font="verdana.ttf" Size="10" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="level" Font="ROCKI.TTF" Size="18" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
   </Typographies>
 </TextDatabase>
