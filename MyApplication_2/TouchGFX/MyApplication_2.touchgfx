@@ -220,6 +220,54 @@
             "RelativeFilename": "straw1.png"
           },
           {
+            "Type": "TextArea",
+            "Name": "strawText_1",
+            "X": 10,
+            "Y": 240,
+            "Width": 45,
+            "Height": 15,
+            "TextId": "scoreText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 128,
+              "Blue": 84
+            },
+            "Wildcard1": {}
+          },
+          {
+            "Type": "TextArea",
+            "Name": "strawText_2",
+            "X": 98,
+            "Y": 240,
+            "Width": 45,
+            "Height": 15,
+            "TextId": "scoreText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 128,
+              "Blue": 84
+            },
+            "Wildcard1": {}
+          },
+          {
+            "Type": "TextArea",
+            "Name": "strawText_3",
+            "X": 187,
+            "Y": 240,
+            "Width": 45,
+            "Height": 15,
+            "TextId": "scoreText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 128,
+              "Blue": 84
+            },
+            "Wildcard1": {}
+          },
+          {
             "Type": "Image",
             "Name": "star",
             "X": 15,

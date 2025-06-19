@@ -9,7 +9,7 @@
       <Text Id="levelText" Alignment="Left" TypographyId="level">
         <Translation Language="GB">&lt;%d&gt;</Translation>
       </Text>
-      <Text Id="scoreText" Alignment="Left" TypographyId="Small">
+      <Text Id="scoreText" Alignment="Center" TypographyId="Small">
         <Translation Language="GB">&lt;%d&gt;</Translation>
       </Text>
       <Text Id="highScoreText" Alignment="Center" TypographyId="Small">
