@@ -1,5 +1,5 @@
 Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o: \
- C:/TouchGFXProjects/MyApplication_2/TouchGFX/target/generated/TouchGFXConfiguration.cpp \
+ D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/target/generated/TouchGFXConfiguration.cpp \
  ../../TouchGFX/generated/texts/include/texts/TypedTextDatabase.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp \
@@ -64,6 +64,8 @@ Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o: \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
  ../../TouchGFX/gui/include/gui/intro_screen/IntroView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/intro_screen/IntroViewBase.hpp \
  ../../TouchGFX/gui/include/gui/intro_screen/IntroPresenter.hpp \
@@ -87,6 +89,12 @@ Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o: \
  ../../TouchGFX/gui/include/gui/pause_screen/PauseView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/pause_screen/PauseViewBase.hpp \
  ../../TouchGFX/gui/include/gui/pause_screen/PausePresenter.hpp \
+ ../../TouchGFX/gui/include/gui/level_screen/LevelView.hpp \
+ ../../TouchGFX/generated/gui_generated/include/gui_generated/level_screen/LevelViewBase.hpp \
+ ../../TouchGFX/gui/include/gui/level_screen/LevelPresenter.hpp \
+ ../../TouchGFX/gui/include/gui/gameover_screen/GameOverView.hpp \
+ ../../TouchGFX/generated/gui_generated/include/gui_generated/gameover_screen/GameOverViewBase.hpp \
+ ../../TouchGFX/gui/include/gui/gameover_screen/GameOverPresenter.hpp \
  ../../TouchGFX/generated/images/include/BitmapDatabase.hpp \
  ../../TouchGFX/generated/images/include/images/BitmapDatabase.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/VectorFontRendererImpl.hpp \
@@ -194,6 +202,8 @@ Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o: \
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
 ../../TouchGFX/gui/include/gui/intro_screen/IntroView.hpp:
 ../../TouchGFX/generated/gui_generated/include/gui_generated/intro_screen/IntroViewBase.hpp:
 ../../TouchGFX/gui/include/gui/intro_screen/IntroPresenter.hpp:
@@ -217,6 +227,12 @@ Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o: \
 ../../TouchGFX/gui/include/gui/pause_screen/PauseView.hpp:
 ../../TouchGFX/generated/gui_generated/include/gui_generated/pause_screen/PauseViewBase.hpp:
 ../../TouchGFX/gui/include/gui/pause_screen/PausePresenter.hpp:
+../../TouchGFX/gui/include/gui/level_screen/LevelView.hpp:
+../../TouchGFX/generated/gui_generated/include/gui_generated/level_screen/LevelViewBase.hpp:
+../../TouchGFX/gui/include/gui/level_screen/LevelPresenter.hpp:
+../../TouchGFX/gui/include/gui/gameover_screen/GameOverView.hpp:
+../../TouchGFX/generated/gui_generated/include/gui_generated/gameover_screen/GameOverViewBase.hpp:
+../../TouchGFX/gui/include/gui/gameover_screen/GameOverPresenter.hpp:
 ../../TouchGFX/generated/images/include/BitmapDatabase.hpp:
 ../../TouchGFX/generated/images/include/images/BitmapDatabase.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/VectorFontRendererImpl.hpp:

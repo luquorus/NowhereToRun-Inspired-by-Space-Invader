@@ -1,5 +1,5 @@
 Application/User/TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
- C:/TouchGFXProjects/MyApplication_2/TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp \
+ D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/target/generated/TouchGFXGeneratedHAL.cpp \
  ../../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/platform/core/MCUInstrumentation.hpp \
@@ -61,6 +61,10 @@ Application/User/TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
  ../../TouchGFX/gui/include/gui/intro_screen/IntroView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/intro_screen/IntroViewBase.hpp \
  ../../TouchGFX/gui/include/gui/intro_screen/IntroPresenter.hpp \
@@ -84,6 +88,12 @@ Application/User/TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
  ../../TouchGFX/gui/include/gui/pause_screen/PauseView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/pause_screen/PauseViewBase.hpp \
  ../../TouchGFX/gui/include/gui/pause_screen/PausePresenter.hpp \
+ ../../TouchGFX/gui/include/gui/level_screen/LevelView.hpp \
+ ../../TouchGFX/generated/gui_generated/include/gui_generated/level_screen/LevelViewBase.hpp \
+ ../../TouchGFX/gui/include/gui/level_screen/LevelPresenter.hpp \
+ ../../TouchGFX/gui/include/gui/gameover_screen/GameOverView.hpp \
+ ../../TouchGFX/generated/gui_generated/include/gui_generated/gameover_screen/GameOverViewBase.hpp \
+ ../../TouchGFX/gui/include/gui/gameover_screen/GameOverPresenter.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/GPIO.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterLinearGradient.hpp \
@@ -193,6 +203,10 @@ Application/User/TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
 ../../TouchGFX/gui/include/gui/intro_screen/IntroView.hpp:
 ../../TouchGFX/generated/gui_generated/include/gui_generated/intro_screen/IntroViewBase.hpp:
 ../../TouchGFX/gui/include/gui/intro_screen/IntroPresenter.hpp:
@@ -216,6 +230,12 @@ Application/User/TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
 ../../TouchGFX/gui/include/gui/pause_screen/PauseView.hpp:
 ../../TouchGFX/generated/gui_generated/include/gui_generated/pause_screen/PauseViewBase.hpp:
 ../../TouchGFX/gui/include/gui/pause_screen/PausePresenter.hpp:
+../../TouchGFX/gui/include/gui/level_screen/LevelView.hpp:
+../../TouchGFX/generated/gui_generated/include/gui_generated/level_screen/LevelViewBase.hpp:
+../../TouchGFX/gui/include/gui/level_screen/LevelPresenter.hpp:
+../../TouchGFX/gui/include/gui/gameover_screen/GameOverView.hpp:
+../../TouchGFX/generated/gui_generated/include/gui_generated/gameover_screen/GameOverViewBase.hpp:
+../../TouchGFX/gui/include/gui/gameover_screen/GameOverPresenter.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/GPIO.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterLinearGradient.hpp:

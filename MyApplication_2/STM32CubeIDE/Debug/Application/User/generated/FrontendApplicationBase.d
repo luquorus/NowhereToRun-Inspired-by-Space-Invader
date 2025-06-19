@@ -1,5 +1,5 @@
 Application/User/generated/FrontendApplicationBase.o: \
- C:/TouchGFXProjects/MyApplication_2/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp \
+ D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/common/AbstractPartition.hpp \
@@ -59,6 +59,10 @@ Application/User/generated/FrontendApplicationBase.o: \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp \
  ../../TouchGFX/gui/include/gui/intro_screen/IntroView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/intro_screen/IntroViewBase.hpp \
  ../../TouchGFX/gui/include/gui/intro_screen/IntroPresenter.hpp \
@@ -82,8 +86,13 @@ Application/User/generated/FrontendApplicationBase.o: \
  ../../TouchGFX/gui/include/gui/pause_screen/PauseView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/pause_screen/PauseViewBase.hpp \
  ../../TouchGFX/gui/include/gui/pause_screen/PausePresenter.hpp \
- ../../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp
+ ../../TouchGFX/gui/include/gui/level_screen/LevelView.hpp \
+ ../../TouchGFX/generated/gui_generated/include/gui_generated/level_screen/LevelViewBase.hpp \
+ ../../TouchGFX/gui/include/gui/level_screen/LevelPresenter.hpp \
+ ../../TouchGFX/gui/include/gui/gameover_screen/GameOverView.hpp \
+ ../../TouchGFX/generated/gui_generated/include/gui_generated/gameover_screen/GameOverViewBase.hpp \
+ ../../TouchGFX/gui/include/gui/gameover_screen/GameOverPresenter.hpp \
+ ../../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp
 ../../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/mvp/MVPApplication.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/common/AbstractPartition.hpp:
@@ -143,6 +152,10 @@ Application/User/generated/FrontendApplicationBase.o: \
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Image.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/Button.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/AbstractButton.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextAreaWithWildcard.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/TextArea.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/TypedText.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:
 ../../TouchGFX/gui/include/gui/intro_screen/IntroView.hpp:
 ../../TouchGFX/generated/gui_generated/include/gui_generated/intro_screen/IntroViewBase.hpp:
 ../../TouchGFX/gui/include/gui/intro_screen/IntroPresenter.hpp:
@@ -166,5 +179,10 @@ Application/User/generated/FrontendApplicationBase.o: \
 ../../TouchGFX/gui/include/gui/pause_screen/PauseView.hpp:
 ../../TouchGFX/generated/gui_generated/include/gui_generated/pause_screen/PauseViewBase.hpp:
 ../../TouchGFX/gui/include/gui/pause_screen/PausePresenter.hpp:
+../../TouchGFX/gui/include/gui/level_screen/LevelView.hpp:
+../../TouchGFX/generated/gui_generated/include/gui_generated/level_screen/LevelViewBase.hpp:
+../../TouchGFX/gui/include/gui/level_screen/LevelPresenter.hpp:
+../../TouchGFX/gui/include/gui/gameover_screen/GameOverView.hpp:
+../../TouchGFX/generated/gui_generated/include/gui_generated/gameover_screen/GameOverViewBase.hpp:
+../../TouchGFX/gui/include/gui/gameover_screen/GameOverPresenter.hpp:
 ../../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/Texts.hpp:

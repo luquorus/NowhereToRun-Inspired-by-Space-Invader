@@ -1,5 +1,5 @@
 Application/User/gui/PauseView.o: \
- C:/TouchGFXProjects/MyApplication_2/TouchGFX/gui/src/pause_screen/PauseView.cpp \
+ D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/pause_screen/PauseView.cpp \
  ../../TouchGFX/gui/include/gui/pause_screen/PauseView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/pause_screen/PauseViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
