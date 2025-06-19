@@ -9,8 +9,6 @@
 #include <gui/screen1_screen/Screen1Presenter.hpp>
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/Image.hpp>
-#include <touchgfx/widgets/canvas/Line.hpp>
-#include <touchgfx/widgets/canvas/PainterRGB565.hpp>
 #include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 
 class Screen1ViewBase : public touchgfx::View<Screen1Presenter>
@@ -33,11 +31,13 @@ protected:
     touchgfx::Image hp1;
     touchgfx::Image hp2;
     touchgfx::Image hp3;
-    touchgfx::Line line1;
-    touchgfx::PainterRGB565 line1Painter;
     touchgfx::Image straw3;
     touchgfx::Image straw2;
     touchgfx::Image straw1;
+    touchgfx::TextAreaWithOneWildcard strawText_1;
+    touchgfx::TextAreaWithOneWildcard strawText_2;
+    touchgfx::TextAreaWithOneWildcard strawText_3;
+    touchgfx::Image line;
     touchgfx::Image star;
     touchgfx::Image stone;
     touchgfx::Image sb9;
@@ -64,12 +64,6 @@ protected:
     touchgfx::TextAreaWithOneWildcard levelText;
 
 private:
-
-    /*
-     * Canvas Buffer Size
-     */
-    static const uint32_t CANVAS_BUFFER_SIZE = 3600;
-    uint8_t canvasBuffer[CANVAS_BUFFER_SIZE];
 
 };
 
