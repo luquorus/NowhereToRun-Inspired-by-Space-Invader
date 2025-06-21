@@ -6,6 +6,18 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_TF2X" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_2OJ3" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_AZAT" Alignment="Left" TypographyId="level">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_LMNR" Alignment="Center" TypographyId="Small">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
       <Text Id="__SingleUse_EFLN" Alignment="Center" TypographyId="Small">
         <Translation Language="GB">&lt;%d&gt;</Translation>
       </Text>
@@ -19,10 +31,10 @@
         <Translation Language="GB">&lt;%d&gt;</Translation>
       </Text>
       <Text Id="strawText_2" Alignment="Center" TypographyId="Small">
-        <Translation Language="GB">&lt;%d&gt;</Translation>
+        <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
       <Text Id="highScoreText" Alignment="Center" TypographyId="Small">
-        <Translation Language="GB">&lt;%d&gt;</Translation>
+        <Translation Language="GB">&lt;value&gt;</Translation>
       </Text>
     </TextGroup>
   </Texts>

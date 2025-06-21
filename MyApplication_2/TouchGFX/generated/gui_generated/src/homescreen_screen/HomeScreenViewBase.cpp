@@ -30,7 +30,7 @@ HomeScreenViewBase::HomeScreenViewBase() :
     highScoreText.setPosition(99, 29, 45, 15);
     highScoreText.setColor(touchgfx::Color::getColorFromRGB(255, 253, 228));
     highScoreText.setLinespacing(0);
-    highScoreText.setTypedText(touchgfx::TypedText(T_HIGHSCORETEXT));
+    highScoreText.setTypedText(touchgfx::TypedText(T___SINGLEUSE_LMNR));
     add(highScoreText);
 }
 
