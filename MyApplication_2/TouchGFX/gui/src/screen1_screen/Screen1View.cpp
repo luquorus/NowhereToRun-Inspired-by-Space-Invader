@@ -34,9 +34,8 @@ tulongHealth(MAX_HEALTH), tulongAlive(true), tulongX(0)
     // Khởi tạo tulong movement
     tulongX = 0;
 
-    // Khởi tạo health system - mỗi straw có 3 mạng riêng biệt
-    for (int i = 0; i < 5; i++) {
-        strawHealth[i] = 6; // Straw 1, 2, 3 mỗi cái có 3 mạng riêng
+    for (int i = 0; i < 3; i++) {
+        strawHealth[i] = 6;
         strawAlive[i] = true;
     }
     tulongHealth = MAX_HEALTH;
@@ -52,7 +51,6 @@ void Screen1View::setupScreen()
 
     //Scoring
     currentScore = 0;
-    highScore = 0;
 
     // Gán buffer trước, rồi snprintf
     score.setWildcard(scoreBuffer);
@@ -63,7 +61,14 @@ void Screen1View::setupScreen()
     Unicode::snprintf(highScoreBuffer, 10, "%d", highScore);
     textArea1.invalidate();
 
+    currentLevel = 1;
+    enemyShootCount = 1; // level 1 chỉ bắn 1 viên
+    speedMultiplier = 1;
 
+    // Hiển thị text level
+    Unicode::snprintf(levelBuffer, 10, "%d", currentLevel);
+    level.setWildcard(levelBuffer);
+    level.invalidate();
 
 
     // Gán enemy xen kẽ sb và c7
@@ -135,8 +140,8 @@ void Screen1View::handleTickEvent()
     // Handle tulong movement from queue messages EVERY tick for responsiveness
     if (tickCount % 3 != 0) handleTulongMovement();
 
-    // Chỉ xử lý game logic mỗi 10 ticks
-    if (tickCount % 15 != 0) return;
+    // Chỉ xử lý game logic mỗi ticks
+    if (tickCount % 10 != 0) return;
 
     // Nếu đang trong quá trình dimming -> nhấp nháy
     if (isDimming)
@@ -260,7 +265,7 @@ void Screen1View::handleTulongMovement()
         switch(cmd)
         {
             case 1: // LEFT button pressed
-                newX = currentX - 10; // 10px như bạn yêu cầu
+                newX = currentX - 10;
                 // Check left boundary
                 if (newX < TULONG_MIN_X)
                 {
@@ -269,7 +274,7 @@ void Screen1View::handleTulongMovement()
                 break;
 
             case 2: // RIGHT button pressed
-                newX = currentX + 10; // 10px như bạn yêu cầu
+                newX = currentX + 10;
                 // Check right boundary
                 if (newX > TULONG_MAX_X)
                 {
@@ -314,22 +319,23 @@ void Screen1View::handleEnemyShooting()
     // Nếu không có đạn đang bay và đã hết cooldown
     if (!starActive && shootCooldown <= 0)
     {
-        int shooterIndex = getRandomAliveEnemy();
-
-        if (shooterIndex != -1)
+        for (int i = 0; i < enemyShootCount; i++)
         {
-            // Tạo đạn mới từ vị trí enemy
-            starX = enemyX[shooterIndex] + enemies[shooterIndex]->getWidth() / 2;
-            starY = enemyY[shooterIndex] + enemies[shooterIndex]->getHeight();
-
-            star.setXY(starX, starY);
-            star.setVisible(true);
-            starActive = true;
-
-            // Reset cooldown
-            shootCooldown = SHOOT_INTERVAL;
+            int shooterIndex = getRandomAliveEnemy();
+            if (shooterIndex != -1)
+            {
+                // Tính toán vị trí mới
+                starX = enemyX[shooterIndex] + enemies[shooterIndex]->getWidth() / 2;
+                starY = enemyY[shooterIndex] + enemies[shooterIndex]->getHeight();
+                star.setXY(starX, starY);
+                star.setVisible(true);
+                starActive = true;
+            }
         }
+
+        shootCooldown = SHOOT_INTERVAL / speedMultiplier;
     }
+
 }
 
 void Screen1View::handleTulongShooting()
@@ -588,6 +594,22 @@ void Screen1View::destroyEnemy(int enemyIndex)
     enemies[enemyIndex]->setVisible(false);
 
     addScore(1);
+
+    // Kiểm tra nếu tất cả enemy đã chết và tulong còn sống
+        bool allDead = true;
+        for (int i = 0; i < NUM_ENEMIES; ++i)
+        {
+            if (enemyAlive[i])
+            {
+                allDead = false;
+                break;
+            }
+        }
+
+        if (allDead && tulongAlive)
+        {
+            triggerVictory();
+        }
 }
 
 void Screen1View::updateHealthDisplay()
@@ -686,43 +708,60 @@ uint32_t Screen1View::getHardwareRandom()
 {
     uint32_t randomValue = 0;
 
-    // Generate random number using hardware RNG
     if (HAL_RNG_GenerateRandomNumber(&hrng, &randomValue) == HAL_OK)
     {
         return randomValue;
     }
     else
     {
-        // Fallback nếu hardware RNG fail
-        // Sử dụng method cũ hoặc một giá trị mặc định
 //        return (tickCount * 7 + 13); // Simple fallback
     }
 }
 
+void Screen1View::addScore(int amount)
+{
+    currentScore += amount;
+    Unicode::snprintf(scoreBuffer, 10, "%d", currentScore);
+    score.invalidate();
+
+    if (currentScore > highScore) {
+        highScore = currentScore;
+        Unicode::snprintf(highScoreBuffer, 10, "%d", highScore);
+        textArea1.invalidate();
+    }
+
+    // Tăng level mỗi 5 điểm
+    int newLevel = currentScore / 5 + 1;
+    if (newLevel > currentLevel && newLevel <= 5) {
+        currentLevel = newLevel;
+
+        // Tăng tốc độ và số đạn
+        speedMultiplier++;
+        enemyShootCount++;
+
+        zigzagStep = 1 + speedMultiplier;
+        dropStep = 1 + speedMultiplier;
+        Unicode::snprintf(levelBuffer, 10, "%d", currentLevel);
+        level.invalidate();
+    }
+}
 void Screen1View::triggerGameOver()
 {
-    // Ẩn đạn
     star.setVisible(false);
     stone.setVisible(false);
     starActive = false;
     stoneActive = false;
 
-    // Gọi chuyển màn hình
     application().gotoGameOverScreenNoTransition();
 }
 
-void Screen1View::addScore(int amount)
+void Screen1View::triggerVictory()
 {
-	currentScore += amount;
-	Unicode::snprintf(scoreBuffer, 10, "%d", currentScore);
-	score.invalidate(); // Không cần setWildcard lại nếu đã làm ở setup
+    star.setVisible(false);
+    stone.setVisible(false);
+    starActive = false;
+    stoneActive = false;
 
-	if (currentScore > highScore)
-	{
-	    highScore = currentScore;
-	    Unicode::snprintf(highScoreBuffer, 10, "%d", highScore);
-	    textArea1.invalidate(); // Cũng không cần setWildcard lại nếu đã làm ở setup
-	}
-
+    application().gotoVictoryScreenNoTransition();
 }
 

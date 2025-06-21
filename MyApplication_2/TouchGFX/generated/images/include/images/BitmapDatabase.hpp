@@ -28,6 +28,7 @@ const uint16_t BITMAP_START_ID = 18;
 const uint16_t BITMAP_START2_ID = 19;
 const uint16_t BITMAP_STRAW1_ID = 20;
 const uint16_t BITMAP_TULONG_ID = 21;
+const uint16_t BITMAP_VICTORY_ID = 22;
 
 namespace BitmapDatabase
 {

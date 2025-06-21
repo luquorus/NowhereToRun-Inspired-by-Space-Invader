@@ -15,6 +15,6 @@ D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/tex
 D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/texts/src/Texts.cpp:31:32:touchgfx::Unicode::UnicodeChar touchgfx::TextProvider::getNextLigature(touchgfx::TextDirection)	5
 D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/texts/src/Texts.cpp:46:6:void touchgfx::TextProvider::initializeInternal()	1
 D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/texts/src/Texts.cpp:52:6:)	1
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/texts/src/Texts.cpp:90:6:static void touchgfx::Texts::setLanguage(touchgfx::LanguageId)	4
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/texts/src/Texts.cpp:120:6:static void touchgfx::Texts::setTranslation(touchgfx::LanguageId, const void*)	1
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/texts/src/Texts.cpp:125:39:const touchgfx::Unicode::UnicodeChar* touchgfx::Texts::getText(touchgfx::TypedTextId) const	1
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/texts/src/Texts.cpp:91:6:static void touchgfx::Texts::setLanguage(touchgfx::LanguageId)	4
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/texts/src/Texts.cpp:121:6:static void touchgfx::Texts::setTranslation(touchgfx::LanguageId, const void*)	1
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/texts/src/Texts.cpp:126:39:const touchgfx::Unicode::UnicodeChar* touchgfx::Texts::getText(touchgfx::TypedTextId) const	1

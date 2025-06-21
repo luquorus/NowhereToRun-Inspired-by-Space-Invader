@@ -19,6 +19,7 @@ public:
     virtual void tearDownScreen();
     virtual void handleTickEvent(); // Để cập nhật chuyển động zigzag
     void triggerGameOver();
+    void triggerVictory();
     void addScore(int amount);
 
 
@@ -35,6 +36,8 @@ protected:
     Unicode::UnicodeChar scoreBuffer[10];
     Unicode::UnicodeChar highScoreBuffer[10];
 
+    int currentLevel;           // Level hiện tại
+    int enemyShootCount;        // Số đạn enemy bắn mỗi lần
 
 
     // Enemy Image pointers & positions
@@ -66,7 +69,7 @@ protected:
     int stoneX, stoneY; // Vị trí đạn stone
     int stoneSpeed; // Tốc độ đạn stone (pixel/tick)
     int tulongShootCooldown; // Cooldown giữa các lần bắn của tulong
-    static const int TULONG_SHOOT_INTERVAL = 3; // Tulong bắn mỗi 3 ticks
+    static const int TULONG_SHOOT_INTERVAL = 2;
     static const int STONE_SPEED = -10; // Tốc độ đạn stone (âm vì bay lên trên)
 
     // Tulong Movement System

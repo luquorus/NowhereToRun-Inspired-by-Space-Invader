@@ -27,6 +27,8 @@
 #include <gui/level_screen/LevelPresenter.hpp>
 #include <gui/gameover_screen/GameOverView.hpp>
 #include <gui/gameover_screen/GameOverPresenter.hpp>
+#include <gui/victory_screen/VictoryView.hpp>
+#include <gui/victory_screen/VictoryPresenter.hpp>
 
 
 /**
@@ -55,7 +57,8 @@ public:
             touchgfx::meta::TypeList< PauseView,
             touchgfx::meta::TypeList< LevelView,
             touchgfx::meta::TypeList< GameOverView,
-            touchgfx::meta::Nil > > > > >
+            touchgfx::meta::TypeList< VictoryView,
+            touchgfx::meta::Nil > > > > > >
             > GeneratedViewTypes;
 
     /**
@@ -73,7 +76,8 @@ public:
             touchgfx::meta::TypeList< PausePresenter,
             touchgfx::meta::TypeList< LevelPresenter,
             touchgfx::meta::TypeList< GameOverPresenter,
-            touchgfx::meta::Nil > > > > >
+            touchgfx::meta::TypeList< VictoryPresenter,
+            touchgfx::meta::Nil > > > > > >
             > GeneratedPresenterTypes;
 
     /**

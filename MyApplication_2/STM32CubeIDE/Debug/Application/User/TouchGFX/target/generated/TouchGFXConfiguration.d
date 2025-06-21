@@ -119,6 +119,9 @@ Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o: \
  ../../TouchGFX/gui/include/gui/gameover_screen/GameOverView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/gameover_screen/GameOverViewBase.hpp \
  ../../TouchGFX/gui/include/gui/gameover_screen/GameOverPresenter.hpp \
+ ../../TouchGFX/gui/include/gui/victory_screen/VictoryView.hpp \
+ ../../TouchGFX/generated/gui_generated/include/gui_generated/victory_screen/VictoryViewBase.hpp \
+ ../../TouchGFX/gui/include/gui/victory_screen/VictoryPresenter.hpp \
  ../../TouchGFX/generated/images/include/BitmapDatabase.hpp \
  ../../TouchGFX/generated/images/include/images/BitmapDatabase.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/VectorFontRendererImpl.hpp \
@@ -247,6 +250,9 @@ Application/User/TouchGFX/target/generated/TouchGFXConfiguration.o: \
 ../../TouchGFX/gui/include/gui/gameover_screen/GameOverView.hpp:
 ../../TouchGFX/generated/gui_generated/include/gui_generated/gameover_screen/GameOverViewBase.hpp:
 ../../TouchGFX/gui/include/gui/gameover_screen/GameOverPresenter.hpp:
+../../TouchGFX/gui/include/gui/victory_screen/VictoryView.hpp:
+../../TouchGFX/generated/gui_generated/include/gui_generated/victory_screen/VictoryViewBase.hpp:
+../../TouchGFX/gui/include/gui/victory_screen/VictoryPresenter.hpp:
 ../../TouchGFX/generated/images/include/BitmapDatabase.hpp:
 ../../TouchGFX/generated/images/include/images/BitmapDatabase.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/VectorFontRendererImpl.hpp:

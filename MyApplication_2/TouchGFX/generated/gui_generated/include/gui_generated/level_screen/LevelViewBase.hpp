@@ -10,6 +10,7 @@
 #include <touchgfx/widgets/Box.hpp>
 #include <touchgfx/widgets/Image.hpp>
 #include <touchgfx/widgets/Button.hpp>
+#include <touchgfx/widgets/TextAreaWithWildcard.hpp>
 
 class LevelViewBase : public touchgfx::View<LevelPresenter>
 {
@@ -29,6 +30,13 @@ protected:
     touchgfx::Box __background;
     touchgfx::Image image1;
     touchgfx::Button button1;
+    touchgfx::TextAreaWithOneWildcard level;
+
+    /*
+     * Wildcard Buffers
+     */
+    static const uint16_t LEVEL_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar levelBuffer[LEVEL_SIZE];
 
 private:
 

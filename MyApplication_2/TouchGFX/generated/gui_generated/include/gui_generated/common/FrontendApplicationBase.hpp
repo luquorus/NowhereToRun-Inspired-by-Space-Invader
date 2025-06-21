@@ -31,15 +31,17 @@ public:
     void gotoIntroScreenCoverTransitionSouth();
 
     // Screen1
+    void gotoScreen1ScreenCoverTransitionEast();
+
     void gotoScreen1ScreenNoTransition();
 
     void gotoScreen1ScreenSlideTransitionEast();
 
-    // Level
-    void gotoLevelScreenCoverTransitionEast();
-
     // GameOver
     void gotoGameOverScreenNoTransition();
+
+    // Victory
+    void gotoVictoryScreenNoTransition();
 
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
@@ -57,15 +59,17 @@ protected:
     void gotoIntroScreenCoverTransitionSouthImpl();
 
     // Screen1
+    void gotoScreen1ScreenCoverTransitionEastImpl();
+
     void gotoScreen1ScreenNoTransitionImpl();
 
     void gotoScreen1ScreenSlideTransitionEastImpl();
 
-    // Level
-    void gotoLevelScreenCoverTransitionEastImpl();
-
     // GameOver
     void gotoGameOverScreenNoTransitionImpl();
+
+    // Victory
+    void gotoVictoryScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP
