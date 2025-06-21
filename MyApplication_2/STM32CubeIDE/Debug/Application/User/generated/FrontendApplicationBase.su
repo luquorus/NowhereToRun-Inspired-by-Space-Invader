@@ -45,7 +45,6 @@
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/transitions/SlideTransition.hpp:87:18:void touchgfx::SlideTransition<templateDirection>::handleTickEvent() [with touchgfx::Direction templateDirection = touchgfx::EAST]	16	static
 D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:124:6:void FrontendApplicationBase::gotoLevelScreenCoverTransitionEastImpl()	40	static
 D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:87:6:void FrontendApplicationBase::gotoIntroScreenCoverTransitionSouthImpl()	40	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:100:6:void FrontendApplicationBase::gotoScreen1ScreenNoTransitionImpl()	40	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:233:10:void touchgfx::Drawable::setPosition(int16_t, int16_t, int16_t, int16_t)	24	static
 D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:111:6:void FrontendApplicationBase::gotoScreen1ScreenSlideTransitionEastImpl()	48	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:308:17:static touchgfx::LCD& touchgfx::HAL::lcd()	0	static
@@ -57,6 +56,10 @@ D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/gui
 D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:94:6:void FrontendApplicationBase::gotoScreen1ScreenNoTransition()	0	static
 D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:105:6:void FrontendApplicationBase::gotoScreen1ScreenSlideTransitionEast()	0	static
 D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:118:6:void FrontendApplicationBase::gotoLevelScreenCoverTransitionEast()	0	static
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:131:6:void FrontendApplicationBase::gotoGameOverScreenNoTransition()	0	static
+../../Middlewares/ST/touchgfx/framework/include/common/AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = touchgfx::NoTransition]	0	static
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:137:6:void FrontendApplicationBase::gotoGameOverScreenNoTransitionImpl()	40	static
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:100:6:void FrontendApplicationBase::gotoScreen1ScreenNoTransitionImpl()	40	static
 ../../Middlewares/ST/touchgfx/framework/include/common/AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = HomeScreenView]	0	static
 ../../Middlewares/ST/touchgfx/framework/include/common/AbstractPartition.hpp:135:8:T& touchgfx::AbstractPartition::at(uint16_t) [with T = HomeScreenPresenter]	0	static
 D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/gui_generated/src/common/FrontendApplicationBase.cpp:74:6:void FrontendApplicationBase::gotoHomeScreenScreenSlideTransitionWestImpl()	48	static

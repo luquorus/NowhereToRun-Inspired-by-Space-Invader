@@ -215,7 +215,7 @@ int main(void)
 
   /* Create the queue(s) */
   /* creation of myQueue1 */
-  myQueue1Handle = osMessageQueueNew (16, sizeof(uint16_t), &myQueue1_attributes);
+  myQueue1Handle = osMessageQueueNew (8, sizeof(uint8_t), &myQueue1_attributes);
 
   /* USER CODE BEGIN RTOS_QUEUES */
   /* add queues, ... */

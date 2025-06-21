@@ -38,6 +38,9 @@ public:
     // Level
     void gotoLevelScreenCoverTransitionEast();
 
+    // GameOver
+    void gotoGameOverScreenNoTransition();
+
 protected:
     touchgfx::Callback<FrontendApplicationBase> transitionCallback;
     FrontendHeap& frontendHeap;
@@ -60,6 +63,9 @@ protected:
 
     // Level
     void gotoLevelScreenCoverTransitionEastImpl();
+
+    // GameOver
+    void gotoGameOverScreenNoTransitionImpl();
 };
 
 #endif // FRONTENDAPPLICATIONBASE_HPP

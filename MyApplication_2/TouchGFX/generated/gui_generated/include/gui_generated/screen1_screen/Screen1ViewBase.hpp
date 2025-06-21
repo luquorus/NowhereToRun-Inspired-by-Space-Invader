@@ -27,6 +27,7 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
+    touchgfx::Image star_1;
     touchgfx::Image screen1;
     touchgfx::Image hp1;
     touchgfx::Image hp2;
@@ -59,9 +60,16 @@ protected:
     touchgfx::Image c78;
     touchgfx::Image c79;
     touchgfx::Image tulong;
-    touchgfx::TextAreaWithOneWildcard highScoreText;
-    touchgfx::TextAreaWithOneWildcard scoreText;
-    touchgfx::TextAreaWithOneWildcard levelText;
+    touchgfx::TextAreaWithOneWildcard score;
+    touchgfx::TextAreaWithOneWildcard textArea1;
+
+    /*
+     * Wildcard Buffers
+     */
+    static const uint16_t SCORE_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar scoreBuffer[SCORE_SIZE];
+    static const uint16_t TEXTAREA1_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar textArea1Buffer[TEXTAREA1_SIZE];
 
 private:
 

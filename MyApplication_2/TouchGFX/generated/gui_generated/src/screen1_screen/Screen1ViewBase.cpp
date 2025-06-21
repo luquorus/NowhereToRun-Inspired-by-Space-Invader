@@ -12,6 +12,10 @@ Screen1ViewBase::Screen1ViewBase()
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
+    star_1.setXY(0, 240);
+    star_1.setBitmap(touchgfx::Bitmap(BITMAP_STAR_ID));
+    add(star_1);
+
     screen1.setXY(0, 0);
     screen1.setBitmap(touchgfx::Bitmap(BITMAP_SCREEN1_ID));
     add(screen1);
@@ -146,23 +150,23 @@ Screen1ViewBase::Screen1ViewBase()
     tulong.setBitmap(touchgfx::Bitmap(BITMAP_TULONG_ID));
     add(tulong);
 
-    highScoreText.setPosition(7, 20, 45, 15);
-    highScoreText.setColor(touchgfx::Color::getColorFromRGB(255, 253, 228));
-    highScoreText.setLinespacing(0);
-    highScoreText.setTypedText(touchgfx::TypedText(T_HIGHSCORETEXT));
-    add(highScoreText);
+    score.setXY(16, 15);
+    score.setColor(touchgfx::Color::getColorFromRGB(255, 253, 245));
+    score.setLinespacing(0);
+    Unicode::snprintf(scoreBuffer, SCORE_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_W7SC).getText());
+    score.setWildcard(scoreBuffer);
+    score.resizeToCurrentText();
+    score.setTypedText(touchgfx::TypedText(T___SINGLEUSE_F3YA));
+    add(score);
 
-    scoreText.setPosition(190, 20, 45, 15);
-    scoreText.setColor(touchgfx::Color::getColorFromRGB(255, 253, 228));
-    scoreText.setLinespacing(0);
-    scoreText.setTypedText(touchgfx::TypedText(T_STRAWTEXT_2));
-    add(scoreText);
-
-    levelText.setXY(134, 4);
-    levelText.setColor(touchgfx::Color::getColorFromRGB(255, 253, 230));
-    levelText.setLinespacing(0);
-    levelText.setTypedText(touchgfx::TypedText(T_LEVELTEXT));
-    add(levelText);
+    textArea1.setXY(201, 15);
+    textArea1.setColor(touchgfx::Color::getColorFromRGB(255, 250, 232));
+    textArea1.setLinespacing(0);
+    Unicode::snprintf(textArea1Buffer, TEXTAREA1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_4MLN).getText());
+    textArea1.setWildcard(textArea1Buffer);
+    textArea1.resizeToCurrentText();
+    textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_82AK));
+    add(textArea1);
 }
 
 Screen1ViewBase::~Screen1ViewBase()

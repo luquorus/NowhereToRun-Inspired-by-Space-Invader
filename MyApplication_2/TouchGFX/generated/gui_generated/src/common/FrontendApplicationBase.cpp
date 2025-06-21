@@ -125,3 +125,16 @@ void FrontendApplicationBase::gotoLevelScreenCoverTransitionEastImpl()
 {
     touchgfx::makeTransition<LevelView, LevelPresenter, touchgfx::CoverTransition<EAST>, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
 }
+
+// GameOver
+
+void FrontendApplicationBase::gotoGameOverScreenNoTransition()
+{
+    transitionCallback = touchgfx::Callback<FrontendApplicationBase>(this, &FrontendApplicationBase::gotoGameOverScreenNoTransitionImpl);
+    pendingScreenTransitionCallback = &transitionCallback;
+}
+
+void FrontendApplicationBase::gotoGameOverScreenNoTransitionImpl()
+{
+    touchgfx::makeTransition<GameOverView, GameOverPresenter, touchgfx::NoTransition, Model >(&currentScreen, &currentPresenter, frontendHeap, &currentTransition, &model);
+}

@@ -142,9 +142,18 @@
         "Components": [
           {
             "Type": "Image",
+            "Name": "star_1",
+            "Y": 240,
+            "Width": 15,
+            "Height": 15,
+            "RelativeFilename": "star.png"
+          },
+          {
+            "Type": "Image",
             "Name": "screen1",
             "Width": 240,
             "Height": 320,
+            "LockPosition": true,
             "RelativeFilename": "Screen1.png"
           },
           {
@@ -448,55 +457,60 @@
           },
           {
             "Type": "TextArea",
-            "Name": "highScoreText",
-            "X": 7,
-            "Y": 20,
-            "Width": 45,
-            "Height": 15,
-            "TextId": "highScoreText",
+            "Name": "score",
+            "X": 16,
+            "Y": 15,
+            "Width": 24,
+            "Height": 14,
+            "TextId": "__SingleUse_F3YA",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
               "Green": 253,
-              "Blue": 228
-            },
-            "Wildcard1": {}
-          },
-          {
-            "Type": "TextArea",
-            "Name": "scoreText",
-            "X": 190,
-            "Y": 20,
-            "Width": 45,
-            "Height": 15,
-            "TextId": "strawText_2",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 253,
-              "Blue": 228
-            },
-            "Wildcard1": {}
-          },
-          {
-            "Type": "TextArea",
-            "Name": "levelText",
-            "X": 134,
-            "Y": 4,
-            "Width": 10,
-            "Height": 18,
-            "TextId": "levelText",
-            "TextRotation": "0",
-            "Color": {
-              "Red": 255,
-              "Green": 253,
-              "Blue": 230
+              "Blue": 245
             },
             "AutoSize": true,
-            "Wildcard1": {}
+            "Wildcard1": {
+              "TextId": "__SingleUse_W7SC",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 201,
+            "Y": 15,
+            "Width": 24,
+            "Height": 14,
+            "TextId": "__SingleUse_82AK",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 250,
+              "Blue": 232
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_4MLN",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
           }
         ],
-        "Interactions": []
+        "Interactions": [
+          {
+            "InteractionName": "Interaction2",
+            "Trigger": {
+              "Type": "TriggerNone"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "GameOver"
+            }
+          }
+        ]
       },
       {
         "Name": "Pause",

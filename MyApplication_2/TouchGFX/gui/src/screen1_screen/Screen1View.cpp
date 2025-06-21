@@ -35,8 +35,8 @@ tulongHealth(MAX_HEALTH), tulongAlive(true), tulongX(0)
     tulongX = 0;
 
     // Khởi tạo health system - mỗi straw có 3 mạng riêng biệt
-    for (int i = 0; i < 3; i++) {
-        strawHealth[i] = MAX_HEALTH; // Straw 1, 2, 3 mỗi cái có 3 mạng riêng
+    for (int i = 0; i < 5; i++) {
+        strawHealth[i] = 6; // Straw 1, 2, 3 mỗi cái có 3 mạng riêng
         strawAlive[i] = true;
     }
     tulongHealth = MAX_HEALTH;
@@ -49,6 +49,22 @@ tulongHealth(MAX_HEALTH), tulongAlive(true), tulongX(0)
 void Screen1View::setupScreen()
 {
     Screen1ViewBase::setupScreen();
+
+    //Scoring
+    currentScore = 0;
+    highScore = 0;
+
+    // Gán buffer trước, rồi snprintf
+    score.setWildcard(scoreBuffer);
+    Unicode::snprintf(scoreBuffer, 10, "%d", currentScore);
+    score.invalidate();
+
+    textArea1.setWildcard(highScoreBuffer); // <- highscore
+    Unicode::snprintf(highScoreBuffer, 10, "%d", highScore);
+    textArea1.invalidate();
+
+
+
 
     // Gán enemy xen kẽ sb và c7
     enemies[0] = &sb1; enemies[1] = &c71; enemies[2] = &sb2;
@@ -117,10 +133,10 @@ void Screen1View::handleTickEvent()
     tickCount++;
 
     // Handle tulong movement from queue messages EVERY tick for responsiveness
-    handleTulongMovement();
+    if (tickCount % 3 != 0) handleTulongMovement();
 
     // Chỉ xử lý game logic mỗi 10 ticks
-    if (tickCount % 10 != 0) return;
+    if (tickCount % 15 != 0) return;
 
     // Nếu đang trong quá trình dimming -> nhấp nháy
     if (isDimming)
@@ -152,6 +168,9 @@ void Screen1View::handleTickEvent()
             starActive = false;
             stone.setVisible(false);
             stoneActive = false;
+
+            triggerGameOver();
+
         }
 
         invalidate();
@@ -229,7 +248,6 @@ void Screen1View::handleTulongMovement()
 {
     uint8_t cmd;
 
-    // Try to receive message from queue (non-blocking)
     osStatus_t status = osMessageQueueGet(myQueue1Handle, &cmd, NULL, 0);
 
     if (status == osOK)
@@ -356,6 +374,7 @@ void Screen1View::updateStarMovement()
         {
             star.setVisible(false);
             starActive = false;
+            addScore(1);
         }
     }
 }
@@ -378,6 +397,133 @@ void Screen1View::updateStoneMovement()
 }
 
 //Collision here
+
+bool Screen1View::checkCollision(const CollisionBox& box1, const CollisionBox& box2)
+{
+    return !(box1.x + box1.width < box2.x ||
+             box2.x + box2.width < box1.x ||
+             box1.y + box1.height < box2.y ||
+             box2.y + box2.height < box1.y);
+}
+
+Screen1View::CollisionBox Screen1View::getImageCollisionBox(touchgfx::Image* image)
+{
+    CollisionBox box;
+    box.x = image->getX();
+    box.y = image->getY();
+    box.width = image->getWidth();
+    box.height = image->getHeight();
+    return box;
+}
+
+void Screen1View::handleCollisions()
+{
+    if (!starActive) return;
+
+    // Tạo collision box cho star
+    CollisionBox starBox;
+    starBox.x = starX;
+    starBox.y = starY;
+    starBox.width = star.getWidth();
+    starBox.height = star.getHeight();
+
+    // Kiểm tra va chạm với straw barriers
+    touchgfx::Image* straws[3] = {&straw1, &straw2, &straw3};
+
+    for (int i = 0; i < 3; i++)
+    {
+        if (strawAlive[i] && straws[i]->isVisible())
+        {
+            CollisionBox strawBox = getImageCollisionBox(straws[i]);
+
+            if (checkCollision(starBox, strawBox))
+            {
+                // Va chạm với straw
+                damageStraw(i);
+
+                // Ẩn đạn
+                star.setVisible(false);
+                starActive = false;
+                return;
+            }
+        }
+    }
+
+    // Kiểm tra va chạm với tulong
+    if (tulongAlive && tulong.isVisible())
+    {
+        CollisionBox tulongBox = getImageCollisionBox(&tulong);
+
+        if (checkCollision(starBox, tulongBox))
+        {
+            // Va chạm với tulong
+            damageTulong();
+
+            // Ẩn đạn
+            star.setVisible(false);
+            starActive = false;
+            return;
+        }
+    }
+}
+
+void Screen1View::handleStoneCollisions()
+{
+    if (!stoneActive) return;
+
+    // Tạo collision box cho stone
+    CollisionBox stoneBox;
+    stoneBox.x = stoneX;
+    stoneBox.y = stoneY;
+    stoneBox.width = stone.getWidth();
+    stoneBox.height = stone.getHeight();
+
+    // Kiểm tra va chạm với enemies
+    for (int i = 0; i < NUM_ENEMIES; ++i)
+    {
+        if (enemyAlive[i] && enemies[i]->isVisible())
+        {
+            CollisionBox enemyBox;
+            enemyBox.x = enemyX[i];
+            enemyBox.y = enemyY[i];
+            enemyBox.width = enemies[i]->getWidth();
+            enemyBox.height = enemies[i]->getHeight();
+
+            if (checkCollision(stoneBox, enemyBox))
+            {
+                // Va chạm với enemy -> phá hủy enemy
+                destroyEnemy(i);
+
+                // Ẩn đạn stone
+                stone.setVisible(false);
+                stoneActive = false;
+                return;
+            }
+        }
+    }
+
+    // Kiểm tra va chạm với straw barriers (tulong có thể bắn nhầm)
+    touchgfx::Image* straws[3] = {&straw1, &straw2, &straw3};
+
+    for (int i = 0; i < 3; i++)
+    {
+    	if (strawAlive[i] && straws[i]->isVisible())
+    	{
+			CollisionBox strawBox = getImageCollisionBox(straws[i]);
+
+			if (checkCollision(stoneBox, strawBox))
+			{
+				// Va chạm với straw (friendly fire)
+				damageStraw(i);
+
+				// Ẩn đạn stone
+				stone.setVisible(false);
+				stoneActive = false;
+				return;
+			}
+    	}
+    }
+}
 
 void Screen1View::damageStraw(int strawIndex)
 {
@@ -427,7 +573,7 @@ void Screen1View::damageTulong()
             stoneActive = false;
         }
 
-        // TODO: Thêm logic game over ở đây nếu cần
+        triggerGameOver();
     }
 
     updateHealthDisplay();
@@ -441,8 +587,7 @@ void Screen1View::destroyEnemy(int enemyIndex)
     enemyAlive[enemyIndex] = false;
     enemies[enemyIndex]->setVisible(false);
 
-    // TODO: Có thể thêm hiệu ứng explosion hoặc animation ở đây
-    // TODO: Thêm điểm số khi tiêu diệt enemy
+    addScore(1);
 }
 
 void Screen1View::updateHealthDisplay()
@@ -512,8 +657,9 @@ int Screen1View::getTulongX()
 
 bool Screen1View::isTulongAtLeftBoundary()
 {
-    return tulong.getX() <= TULONG_MIN_X;
+	 return tulong.getX() <= TULONG_MIN_X;
 }
+
 
 bool Screen1View::isTulongAtRightBoundary()
 {
@@ -552,3 +698,31 @@ uint32_t Screen1View::getHardwareRandom()
 //        return (tickCount * 7 + 13); // Simple fallback
     }
 }
+
+void Screen1View::triggerGameOver()
+{
+    // Ẩn đạn
+    star.setVisible(false);
+    stone.setVisible(false);
+    starActive = false;
+    stoneActive = false;
+
+    // Gọi chuyển màn hình
+    application().gotoGameOverScreenNoTransition();
+}
+
+void Screen1View::addScore(int amount)
+{
+	currentScore += amount;
+	Unicode::snprintf(scoreBuffer, 10, "%d", currentScore);
+	score.invalidate(); // Không cần setWildcard lại nếu đã làm ở setup
+
+	if (currentScore > highScore)
+	{
+	    highScore = currentScore;
+	    Unicode::snprintf(highScoreBuffer, 10, "%d", highScore);
+	    textArea1.invalidate(); // Cũng không cần setWildcard lại nếu đã làm ở setup
+	}
+
+}
+

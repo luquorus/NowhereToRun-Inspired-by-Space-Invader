@@ -18,6 +18,9 @@ public:
     virtual void setupScreen();
     virtual void tearDownScreen();
     virtual void handleTickEvent(); // Để cập nhật chuyển động zigzag
+    void triggerGameOver();
+    void addScore(int amount);
+
 
 protected:
 protected:
@@ -25,6 +28,14 @@ protected:
     static const int NUM_ROWS = 3;
     static const int NUM_COLS = 6;
     static const int NUM_ENEMIES = NUM_ROWS * NUM_COLS;
+
+    // Scoring
+    int currentScore;
+    int highScore;
+    Unicode::UnicodeChar scoreBuffer[10];
+    Unicode::UnicodeChar highScoreBuffer[10];
+
+
 
     // Enemy Image pointers & positions
     touchgfx::Image* enemies[NUM_ENEMIES];
@@ -55,14 +66,14 @@ protected:
     int stoneX, stoneY; // Vị trí đạn stone
     int stoneSpeed; // Tốc độ đạn stone (pixel/tick)
     int tulongShootCooldown; // Cooldown giữa các lần bắn của tulong
-    static const int TULONG_SHOOT_INTERVAL = 5; // Tulong bắn mỗi 5 ticks
+    static const int TULONG_SHOOT_INTERVAL = 3; // Tulong bắn mỗi 3 ticks
     static const int STONE_SPEED = -10; // Tốc độ đạn stone (âm vì bay lên trên)
 
     // Tulong Movement System
     int tulongX; // Vị trí X của tulong
     static const int TULONG_MOVE_STEP = 20; // Bước di chuyển của tulong (20px)
     static const int TULONG_MIN_X = 0; // Giới hạn trái
-    static const int TULONG_MAX_X = 180; // Giới hạn phải (240 - width tulong)
+    static const int TULONG_MAX_X = 210; // Giới hạn phải (240 - width tulong)
 
     // Health System
     static const int MAX_HEALTH = 3; // Mạng sống tối đa
