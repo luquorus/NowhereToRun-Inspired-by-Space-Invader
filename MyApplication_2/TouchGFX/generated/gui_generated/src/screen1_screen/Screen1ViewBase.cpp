@@ -43,19 +43,19 @@ Screen1ViewBase::Screen1ViewBase()
     strawText_1.setPosition(10, 240, 45, 15);
     strawText_1.setColor(touchgfx::Color::getColorFromRGB(255, 128, 84));
     strawText_1.setLinespacing(0);
-    strawText_1.setTypedText(touchgfx::TypedText(T_SCORETEXT));
+    strawText_1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_EFLN));
     add(strawText_1);
 
     strawText_2.setPosition(98, 240, 45, 15);
     strawText_2.setColor(touchgfx::Color::getColorFromRGB(255, 128, 84));
     strawText_2.setLinespacing(0);
-    strawText_2.setTypedText(touchgfx::TypedText(T_SCORETEXT));
+    strawText_2.setTypedText(touchgfx::TypedText(T___SINGLEUSE_PDBD));
     add(strawText_2);
 
     strawText_3.setPosition(187, 240, 45, 15);
     strawText_3.setColor(touchgfx::Color::getColorFromRGB(255, 128, 84));
     strawText_3.setLinespacing(0);
-    strawText_3.setTypedText(touchgfx::TypedText(T_SCORETEXT));
+    strawText_3.setTypedText(touchgfx::TypedText(T___SINGLEUSE_KLP4));
     add(strawText_3);
 
     line.setXY(0, 230);
@@ -155,7 +155,7 @@ Screen1ViewBase::Screen1ViewBase()
     scoreText.setPosition(190, 20, 45, 15);
     scoreText.setColor(touchgfx::Color::getColorFromRGB(255, 253, 228));
     scoreText.setLinespacing(0);
-    scoreText.setTypedText(touchgfx::TypedText(T_SCORETEXT));
+    scoreText.setTypedText(touchgfx::TypedText(T_STRAWTEXT_2));
     add(scoreText);
 
     levelText.setXY(134, 4);

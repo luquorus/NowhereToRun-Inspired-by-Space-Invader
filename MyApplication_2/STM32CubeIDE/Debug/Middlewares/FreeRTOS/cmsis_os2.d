@@ -51,6 +51,7 @@ Middlewares/FreeRTOS/cmsis_os2.o: \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_ltdc_ex.h \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+ ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
@@ -105,6 +106,7 @@ D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/Middlewares/Third_Part
 ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_ltdc_ex.h:
 ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h:
 ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
+../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h:
 ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h:
 ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
 ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:

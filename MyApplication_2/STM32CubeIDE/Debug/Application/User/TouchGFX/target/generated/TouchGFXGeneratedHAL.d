@@ -71,41 +71,10 @@ Application/User/TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
  ../../TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp \
  ../../TouchGFX/gui/include/gui/screen1_screen/Screen1Presenter.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Utils.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Rasterizer.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Outline.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/transforms/DisplayTransformation.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterColor.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
- ../../TouchGFX/gui/include/gui/pause_screen/PauseView.hpp \
- ../../TouchGFX/generated/gui_generated/include/gui_generated/pause_screen/PauseViewBase.hpp \
- ../../TouchGFX/gui/include/gui/pause_screen/PausePresenter.hpp \
- ../../TouchGFX/gui/include/gui/level_screen/LevelView.hpp \
- ../../TouchGFX/generated/gui_generated/include/gui_generated/level_screen/LevelViewBase.hpp \
- ../../TouchGFX/gui/include/gui/level_screen/LevelPresenter.hpp \
- ../../TouchGFX/gui/include/gui/gameover_screen/GameOverView.hpp \
- ../../TouchGFX/generated/gui_generated/include/gui_generated/gameover_screen/GameOverViewBase.hpp \
- ../../TouchGFX/gui/include/gui/gameover_screen/GameOverPresenter.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/GPIO.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterLinearGradient.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterARGB8888.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterARGB8888.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterARGB8888LinearGradient.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565LinearGradient.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB888.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB888.hpp \
- ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB888LinearGradient.hpp \
+ ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
+ ../../Core/Inc/stm32f4xx_hal_conf.h \
+ ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+ ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
  ../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
  ../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f429xx.h \
  ../../Drivers/CMSIS/Include/core_cm4.h \
@@ -114,10 +83,6 @@ Application/User/TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
  ../../Drivers/CMSIS/Include/cmsis_gcc.h \
  ../../Drivers/CMSIS/Include/mpu_armv7.h \
  ../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h \
- ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h \
- ../../Core/Inc/stm32f4xx_hal_conf.h \
- ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
- ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
@@ -139,9 +104,45 @@ Application/User/TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_ltdc_ex.h \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+ ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h \
  ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h \
- ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h
+ ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+ ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
+ ../../TouchGFX/gui/include/gui/pause_screen/PauseView.hpp \
+ ../../TouchGFX/generated/gui_generated/include/gui_generated/pause_screen/PauseViewBase.hpp \
+ ../../TouchGFX/gui/include/gui/pause_screen/PausePresenter.hpp \
+ ../../TouchGFX/gui/include/gui/level_screen/LevelView.hpp \
+ ../../TouchGFX/generated/gui_generated/include/gui_generated/level_screen/LevelViewBase.hpp \
+ ../../TouchGFX/gui/include/gui/level_screen/LevelPresenter.hpp \
+ ../../TouchGFX/gui/include/gui/gameover_screen/GameOverView.hpp \
+ ../../TouchGFX/generated/gui_generated/include/gui_generated/gameover_screen/GameOverViewBase.hpp \
+ ../../TouchGFX/gui/include/gui/gameover_screen/GameOverPresenter.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/GPIO.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterColor.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterLinearGradient.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/transforms/DisplayTransformation.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Utils.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Rasterizer.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Outline.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterARGB8888.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterARGB8888.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterARGB8888LinearGradient.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565LinearGradient.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB888.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB888.hpp \
+ ../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB888LinearGradient.hpp
 ../../TouchGFX/target/generated/TouchGFXGeneratedHAL.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/HAL.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/platform/core/MCUInstrumentation.hpp:
@@ -213,41 +214,10 @@ Application/User/TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
 ../../TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp:
 ../../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp:
 ../../TouchGFX/gui/include/gui/screen1_screen/Screen1Presenter.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Line.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/Utils.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Rasterizer.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Outline.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/transforms/DisplayTransformation.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp:
-../../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterColor.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
-../../TouchGFX/gui/include/gui/pause_screen/PauseView.hpp:
-../../TouchGFX/generated/gui_generated/include/gui_generated/pause_screen/PauseViewBase.hpp:
-../../TouchGFX/gui/include/gui/pause_screen/PausePresenter.hpp:
-../../TouchGFX/gui/include/gui/level_screen/LevelView.hpp:
-../../TouchGFX/generated/gui_generated/include/gui_generated/level_screen/LevelViewBase.hpp:
-../../TouchGFX/gui/include/gui/level_screen/LevelPresenter.hpp:
-../../TouchGFX/gui/include/gui/gameover_screen/GameOverView.hpp:
-../../TouchGFX/generated/gui_generated/include/gui_generated/gameover_screen/GameOverViewBase.hpp:
-../../TouchGFX/gui/include/gui/gameover_screen/GameOverPresenter.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/GPIO.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterLinearGradient.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterARGB8888.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterARGB8888.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterARGB8888LinearGradient.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565LinearGradient.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB888.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB888.hpp:
-../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB888LinearGradient.hpp:
+../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
+../../Core/Inc/stm32f4xx_hal_conf.h:
+../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:
+../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:
 ../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
 ../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f429xx.h:
 ../../Drivers/CMSIS/Include/core_cm4.h:
@@ -256,10 +226,6 @@ Application/User/TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
 ../../Drivers/CMSIS/Include/cmsis_gcc.h:
 ../../Drivers/CMSIS/Include/mpu_armv7.h:
 ../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h:
-../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:
-../../Core/Inc/stm32f4xx_hal_conf.h:
-../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:
-../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:
 ../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
 ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:
 ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h:
@@ -281,6 +247,42 @@ Application/User/TouchGFX/target/generated/TouchGFXGeneratedHAL.o: \
 ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_ltdc_ex.h:
 ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h:
 ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
+../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rng.h:
 ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h:
 ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:
 ../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
+../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
+../../TouchGFX/gui/include/gui/pause_screen/PauseView.hpp:
+../../TouchGFX/generated/gui_generated/include/gui_generated/pause_screen/PauseViewBase.hpp:
+../../TouchGFX/gui/include/gui/pause_screen/PausePresenter.hpp:
+../../TouchGFX/gui/include/gui/level_screen/LevelView.hpp:
+../../TouchGFX/generated/gui_generated/include/gui_generated/level_screen/LevelViewBase.hpp:
+../../TouchGFX/gui/include/gui/level_screen/LevelPresenter.hpp:
+../../TouchGFX/gui/include/gui/gameover_screen/GameOverView.hpp:
+../../TouchGFX/generated/gui_generated/include/gui_generated/gameover_screen/GameOverViewBase.hpp:
+../../TouchGFX/gui/include/gui/gameover_screen/GameOverPresenter.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/GPIO.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRVectorRenderer.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterColor.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterLinearGradient.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainter.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/transforms/DisplayTransformation.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/Canvas.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CWRUtil.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Utils.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Rasterizer.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Outline.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/canvas_widget_renderer/Cell.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/CanvasWidget.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterARGB8888.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Color.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterARGB8888.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterARGB8888LinearGradient.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565.hpp:
+../../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB565.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB565LinearGradient.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB888.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/AbstractPainterRGB888.hpp:
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/widgets/canvas/PainterRGB888LinearGradient.hpp:

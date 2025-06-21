@@ -208,7 +208,7 @@
             "Y": 240,
             "Width": 45,
             "Height": 15,
-            "TextId": "scoreText",
+            "TextId": "__SingleUse_EFLN",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
@@ -224,7 +224,7 @@
             "Y": 240,
             "Width": 45,
             "Height": 15,
-            "TextId": "scoreText",
+            "TextId": "__SingleUse_PDBD",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
@@ -240,7 +240,7 @@
             "Y": 240,
             "Width": 45,
             "Height": 15,
-            "TextId": "scoreText",
+            "TextId": "__SingleUse_KLP4",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
@@ -469,7 +469,7 @@
             "Y": 20,
             "Width": 45,
             "Height": 15,
-            "TextId": "scoreText",
+            "TextId": "strawText_2",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
