@@ -378,6 +378,133 @@ void Screen1View::updateStoneMovement()
 }
 
 //Collision here
+// Collision Detection Methods
+bool Screen1View::checkCollision(const CollisionBox& box1, const CollisionBox& box2)
+{
+    return !(box1.x + box1.width < box2.x ||
+             box2.x + box2.width < box1.x ||
+             box1.y + box1.height < box2.y ||
+             box2.y + box2.height < box1.y);
+}
+
+Screen1View::CollisionBox Screen1View::getImageCollisionBox(touchgfx::Image* image)
+{
+    CollisionBox box;
+    box.x = image->getX();
+    box.y = image->getY();
+    box.width = image->getWidth();
+    box.height = image->getHeight();
+    return box;
+}
+
+void Screen1View::handleCollisions()
+{
+    if (!starActive) return;
+
+    // Tạo collision box cho star
+    CollisionBox starBox;
+    starBox.x = starX;
+    starBox.y = starY;
+    starBox.width = star.getWidth();
+    starBox.height = star.getHeight();
+
+    // Kiểm tra va chạm với straw barriers
+    touchgfx::Image* straws[3] = {&straw1, &straw2, &straw3};
+
+    for (int i = 0; i < 3; i++)
+    {
+        if (strawAlive[i] && straws[i]->isVisible())
+        {
+            CollisionBox strawBox = getImageCollisionBox(straws[i]);
+
+            if (checkCollision(starBox, strawBox))
+            {
+                // Va chạm với straw
+                damageStraw(i);
+
+                // Ẩn đạn
+                star.setVisible(false);
+                starActive = false;
+                return;
+            }
+        }
+    }
+
+    // Kiểm tra va chạm với tulong
+    if (tulongAlive && tulong.isVisible())
+    {
+        CollisionBox tulongBox = getImageCollisionBox(&tulong);
+
+        if (checkCollision(starBox, tulongBox))
+        {
+            // Va chạm với tulong
+            damageTulong();
+
+            // Ẩn đạn
+            star.setVisible(false);
+            starActive = false;
+            return;
+        }
+    }
+}
+
+void Screen1View::handleStoneCollisions()
+{
+    if (!stoneActive) return;
+
+    // Tạo collision box cho stone
+    CollisionBox stoneBox;
+    stoneBox.x = stoneX;
+    stoneBox.y = stoneY;
+    stoneBox.width = stone.getWidth();
+    stoneBox.height = stone.getHeight();
+
+    // Kiểm tra va chạm với enemies
+    for (int i = 0; i < NUM_ENEMIES; ++i)
+    {
+        if (enemyAlive[i] && enemies[i]->isVisible())
+        {
+            CollisionBox enemyBox;
+            enemyBox.x = enemyX[i];
+            enemyBox.y = enemyY[i];
+            enemyBox.width = enemies[i]->getWidth();
+            enemyBox.height = enemies[i]->getHeight();
+
+            if (checkCollision(stoneBox, enemyBox))
+            {
+                // Va chạm với enemy -> phá hủy enemy
+                destroyEnemy(i);
+
+                // Ẩn đạn stone
+                stone.setVisible(false);
+                stoneActive = false;
+                return;
+            }
+        }
+    }
+
+    // Kiểm tra va chạm với straw barriers (tulong có thể bắn nhầm)
+    touchgfx::Image* straws[3] = {&straw1, &straw2, &straw3};
+
+    for (int i = 0; i < 3; i++)
+    {
+    	if (strawAlive[i] && straws[i]->isVisible())
+    	        {
+    	            CollisionBox strawBox = getImageCollisionBox(straws[i]);
+
+    	            if (checkCollision(stoneBox, strawBox))
+    	            {
+    	                // Va chạm với straw (friendly fire)
+    	                damageStraw(i);
+
+    	                // Ẩn đạn stone
+    	                stone.setVisible(false);
+    	                stoneActive = false;
+    	                return;
+    	            }
+    	        }
+    	    }
+    	}
 
 void Screen1View::damageStraw(int strawIndex)
 {
