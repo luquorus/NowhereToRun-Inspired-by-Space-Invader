@@ -1,0 +1,8 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	1
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/level_screen/LevelView.cpp:13:6:virtual void LevelView::tearDownScreen()	1
+../../TouchGFX/gui/include/gui/level_screen/LevelView.hpp:11:13:LevelView::~LevelView()	1
+../../TouchGFX/gui/include/gui/level_screen/LevelView.hpp:11:13:virtual LevelView::~LevelView()	1
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/level_screen/LevelView.cpp:3:1:LevelView::LevelView()	1
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/level_screen/LevelView.cpp:8:6:virtual void LevelView::setupScreen()	1

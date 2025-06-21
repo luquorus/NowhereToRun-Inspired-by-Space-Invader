@@ -139,7 +139,6 @@
       },
       {
         "Name": "Screen1",
-        "CanvasBufferSize": 3600,
         "Components": [
           {
             "Type": "Image",
@@ -176,23 +175,6 @@
             "RelativeFilename": "hp.png"
           },
           {
-            "Type": "Line",
-            "Name": "line1",
-            "Y": 230,
-            "Width": 240,
-            "Height": 15,
-            "Color": {
-              "Red": 255,
-              "Green": 244,
-              "Blue": 226
-            },
-            "StartY": 2.0,
-            "EndX": 240.0,
-            "EndY": 2.0,
-            "LineWidth": 2.0,
-            "LineEndingStyle": "Round"
-          },
-          {
             "Type": "Image",
             "Name": "straw3",
             "X": 100,
@@ -226,7 +208,7 @@
             "Y": 240,
             "Width": 45,
             "Height": 15,
-            "TextId": "scoreText",
+            "TextId": "__SingleUse_EFLN",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
@@ -242,7 +224,7 @@
             "Y": 240,
             "Width": 45,
             "Height": 15,
-            "TextId": "scoreText",
+            "TextId": "__SingleUse_PDBD",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
@@ -258,7 +240,7 @@
             "Y": 240,
             "Width": 45,
             "Height": 15,
-            "TextId": "scoreText",
+            "TextId": "__SingleUse_KLP4",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
@@ -266,6 +248,14 @@
               "Blue": 84
             },
             "Wildcard1": {}
+          },
+          {
+            "Type": "Image",
+            "Name": "line",
+            "Y": 230,
+            "Width": 240,
+            "Height": 21,
+            "RelativeFilename": "line.png"
           },
           {
             "Type": "Image",
@@ -479,7 +469,7 @@
             "Y": 20,
             "Width": 45,
             "Height": 15,
-            "TextId": "scoreText",
+            "TextId": "strawText_2",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
