@@ -377,7 +377,10 @@ void Screen1View::updateStoneMovement()
     }
 }
 
+<<<<<<< HEAD
 //Collision here
+=======
+>>>>>>> 6508dc1 (add sound)
 // Collision Detection Methods
 bool Screen1View::checkCollision(const CollisionBox& box1, const CollisionBox& box2)
 {
@@ -489,6 +492,7 @@ void Screen1View::handleStoneCollisions()
     for (int i = 0; i < 3; i++)
     {
     	if (strawAlive[i] && straws[i]->isVisible())
+<<<<<<< HEAD
     	        {
     	            CollisionBox strawBox = getImageCollisionBox(straws[i]);
 
@@ -505,6 +509,24 @@ void Screen1View::handleStoneCollisions()
     	        }
     	    }
     	}
+=======
+    	 {
+    	      CollisionBox strawBox = getImageCollisionBox(straws[i]);
+
+    	      if (checkCollision(stoneBox, strawBox))
+    	      {
+    	           // Va chạm với straw (friendly fire)
+    	           damageStraw(i);
+
+    	           // Ẩn đạn stone
+    	           stone.setVisible(false);
+    	           stoneActive = false;
+    	           return;
+    	      }
+    	 }
+    }
+}
+>>>>>>> 6508dc1 (add sound)
 
 void Screen1View::damageStraw(int strawIndex)
 {

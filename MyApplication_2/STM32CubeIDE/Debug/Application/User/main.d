@@ -49,7 +49,11 @@ Application/User/main.o: \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/task.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/list.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h \
- ../../TouchGFX/App/app_touchgfx.h \
+ ../../Core/Inc/crc.h ../../Core/Inc/main.h ../../Core/Inc/dma2d.h \
+ ../../Core/Inc/i2c.h ../../Core/Inc/ltdc.h ../../Core/Inc/rng.h \
+ ../../Core/Inc/spi.h ../../Core/Inc/tim.h ../../Core/Inc/gpio.h \
+ ../../Core/Inc/fmc.h ../../TouchGFX/App/app_touchgfx.h \
+ ../Application/User/sound.h \
  ../../Drivers/BSP/Components/ili9341/ili9341.h \
  ../../Drivers/BSP/Components/ili9341/../Common/lcd.h
 ../../Core/Inc/main.h:
@@ -101,6 +105,17 @@ Application/User/main.o: \
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/task.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/include/list.h:
 ../../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.h:
+../../Core/Inc/crc.h:
+../../Core/Inc/main.h:
+../../Core/Inc/dma2d.h:
+../../Core/Inc/i2c.h:
+../../Core/Inc/ltdc.h:
+../../Core/Inc/rng.h:
+../../Core/Inc/spi.h:
+../../Core/Inc/tim.h:
+../../Core/Inc/gpio.h:
+../../Core/Inc/fmc.h:
 ../../TouchGFX/App/app_touchgfx.h:
+../Application/User/sound.h:
 ../../Drivers/BSP/Components/ili9341/ili9341.h:
 ../../Drivers/BSP/Components/ili9341/../Common/lcd.h:
