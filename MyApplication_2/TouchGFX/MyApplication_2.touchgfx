@@ -38,7 +38,7 @@
             "Y": 29,
             "Width": 45,
             "Height": 15,
-            "TextId": "highScoreText",
+            "TextId": "__SingleUse_LMNR",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
@@ -453,7 +453,7 @@
             "Y": 20,
             "Width": 45,
             "Height": 15,
-            "TextId": "highScoreText",
+            "TextId": "__SingleUse_2OJ3",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
@@ -469,7 +469,7 @@
             "Y": 20,
             "Width": 45,
             "Height": 15,
-            "TextId": "strawText_2",
+            "TextId": "__SingleUse_TF2X",
             "TextRotation": "0",
             "Color": {
               "Red": 255,
@@ -485,7 +485,7 @@
             "Y": 4,
             "Width": 10,
             "Height": 18,
-            "TextId": "levelText",
+            "TextId": "__SingleUse_AZAT",
             "TextRotation": "0",
             "Color": {
               "Red": 255,

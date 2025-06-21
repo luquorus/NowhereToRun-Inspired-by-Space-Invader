@@ -1,0 +1,11 @@
+../Application/User/sound.c:5:6:playSound.part.0	16	static
+../Application/User/sound.c:5:6:playSound	0	static
+../Application/User/sound.c:14:6:playIntroMusic	8	static
+../Application/User/sound.c:30:6:soundPlayerHitTarget	8	static
+../Application/User/sound.c:36:6:soundPlayerHitBarrier	8	static
+../Application/User/sound.c:42:6:soundEnemyHitBarrier	8	static
+../Application/User/sound.c:48:6:soundEnemyHitPlayer	8	static
+../Application/User/sound.c:54:6:soundVictory	8	static
+../Application/User/sound.c:64:6:soundGameOver	8	static
+../Application/User/sound.c:72:6:soundClick	0	static
+../Application/User/sound.c:76:6:playSoundEvent	0	static

@@ -149,19 +149,19 @@ Screen1ViewBase::Screen1ViewBase()
     highScoreText.setPosition(7, 20, 45, 15);
     highScoreText.setColor(touchgfx::Color::getColorFromRGB(255, 253, 228));
     highScoreText.setLinespacing(0);
-    highScoreText.setTypedText(touchgfx::TypedText(T_HIGHSCORETEXT));
+    highScoreText.setTypedText(touchgfx::TypedText(T___SINGLEUSE_2OJ3));
     add(highScoreText);
 
     scoreText.setPosition(190, 20, 45, 15);
     scoreText.setColor(touchgfx::Color::getColorFromRGB(255, 253, 228));
     scoreText.setLinespacing(0);
-    scoreText.setTypedText(touchgfx::TypedText(T_STRAWTEXT_2));
+    scoreText.setTypedText(touchgfx::TypedText(T___SINGLEUSE_TF2X));
     add(scoreText);
 
     levelText.setXY(134, 4);
     levelText.setColor(touchgfx::Color::getColorFromRGB(255, 253, 230));
     levelText.setLinespacing(0);
-    levelText.setTypedText(touchgfx::TypedText(T_LEVELTEXT));
+    levelText.setTypedText(touchgfx::TypedText(T___SINGLEUSE_AZAT));
     add(levelText);
 }
 
