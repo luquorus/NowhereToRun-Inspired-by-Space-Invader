@@ -6,6 +6,18 @@
   <Texts>
     <TextGroup Id="Group1" />
     <TextGroup Id="Unsorted">
+      <Text Id="__SingleUse_72BN" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">01</Translation>
+      </Text>
+      <Text Id="__SingleUse_14L5" Alignment="Left" TypographyId="Small">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
+      <Text Id="__SingleUse_FVDN" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">000</Translation>
+      </Text>
+      <Text Id="__SingleUse_T3N1" Alignment="Left" TypographyId="Large">
+        <Translation Language="GB">&lt;value&gt;</Translation>
+      </Text>
       <Text Id="__SingleUse_4MLN" Alignment="Left" TypographyId="Small">
         <Translation Language="GB">000</Translation>
       </Text>
@@ -39,10 +51,10 @@
     </TextGroup>
   </Texts>
   <Typographies>
-    <Typography Id="Default" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
+    <Typography Id="Default" Font="TCB_____.TTF" Size="1" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?">
       <LanguageSetting Language="GB" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" IsCompressed="no" Direction="LTR" FallbackCharacter="?" />
     </Typography>
-    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />
+    <Typography Id="Large" Font="verdana.ttf" Size="40" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
     <Typography Id="Small" Font="SegUIVar.ttf" Size="14" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" WildcardCharacterRanges="0-9" />
     <Typography Id="level" Font="FRAHV.TTF" Size="18" Bpp="4" IsVector="no" Direction="RTL" FallbackCharacter="?" />
     <Typography Id="Typography_00" Font="verdana.ttf" Size="20" Bpp="4" IsVector="no" Direction="LTR" FallbackCharacter="?" />

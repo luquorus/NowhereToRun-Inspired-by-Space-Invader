@@ -59,7 +59,7 @@
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionCover",
               "ScreenTransitionDirection": "East",
-              "ActionComponent": "Level"
+              "ActionComponent": "Screen1"
             }
           },
           {
@@ -119,7 +119,7 @@
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionCover",
               "ScreenTransitionDirection": "East",
-              "ActionComponent": "Level"
+              "ActionComponent": "Screen1"
             }
           },
           {
@@ -144,6 +144,15 @@
             "Type": "Image",
             "Name": "star_1",
             "Y": 240,
+            "Width": 15,
+            "Height": 15,
+            "RelativeFilename": "star.png"
+          },
+          {
+            "Type": "Image",
+            "Name": "star_2",
+            "X": -8,
+            "Y": 268,
             "Width": 15,
             "Height": 15,
             "RelativeFilename": "star.png"
@@ -496,6 +505,27 @@
               "UseBuffer": true,
               "BufferSize": 10
             }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "level",
+            "X": 135,
+            "Y": 8,
+            "Width": 13,
+            "Height": 14,
+            "TextId": "__SingleUse_14L5",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 250,
+              "Blue": 237
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_72BN",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
           }
         ],
         "Interactions": [
@@ -508,6 +538,17 @@
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "GameOver"
+            }
+          },
+          {
+            "InteractionName": "Interaction3",
+            "Trigger": {
+              "Type": "TriggerNone"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Victory"
             }
           }
         ]
@@ -590,6 +631,27 @@
             "Height": 50,
             "Pressed": "pausebtm.png",
             "Released": "pausebtm.png"
+          },
+          {
+            "Type": "TextArea",
+            "Name": "level",
+            "X": 83,
+            "Y": 136,
+            "Width": 75,
+            "Height": 41,
+            "TextId": "__SingleUse_T3N1",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "__SingleUse_FVDN",
+              "UseBuffer": true,
+              "BufferSize": 10
+            }
           }
         ],
         "Interactions": [
@@ -640,6 +702,42 @@
               "Type": "ActionGotoScreen",
               "ScreenTransitionType": "ScreenTransitionCover",
               "ScreenTransitionDirection": "West",
+              "ActionComponent": "HomeScreen"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Victory",
+        "Components": [
+          {
+            "Type": "Image",
+            "Name": "image1",
+            "Width": 240,
+            "Height": 320,
+            "RelativeFilename": "victory.png"
+          },
+          {
+            "Type": "Button",
+            "Name": "button1",
+            "X": 24,
+            "Y": 188,
+            "Width": 192,
+            "Height": 39,
+            "Pressed": "home.png",
+            "Released": "home.png"
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "button1"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionNone",
               "ActionComponent": "HomeScreen"
             }
           }

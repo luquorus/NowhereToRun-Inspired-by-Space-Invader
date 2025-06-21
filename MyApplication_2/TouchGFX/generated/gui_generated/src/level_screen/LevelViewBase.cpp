@@ -4,6 +4,7 @@
 #include <gui_generated/level_screen/LevelViewBase.hpp>
 #include <touchgfx/Color.hpp>
 #include <images/BitmapDatabase.hpp>
+#include <texts/TextKeysAndLanguages.hpp>
 
 LevelViewBase::LevelViewBase() :
     buttonCallback(this, &LevelViewBase::buttonCallbackHandler)
@@ -20,6 +21,15 @@ LevelViewBase::LevelViewBase() :
     button1.setBitmaps(touchgfx::Bitmap(BITMAP_PAUSEBTM_ID), touchgfx::Bitmap(BITMAP_PAUSEBTM_ID));
     button1.setAction(buttonCallback);
     add(button1);
+
+    level.setXY(83, 136);
+    level.setColor(touchgfx::Color::getColorFromRGB(255, 255, 255));
+    level.setLinespacing(0);
+    Unicode::snprintf(levelBuffer, LEVEL_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_FVDN).getText());
+    level.setWildcard(levelBuffer);
+    level.resizeToCurrentText();
+    level.setTypedText(touchgfx::TypedText(T___SINGLEUSE_T3N1));
+    add(level);
 }
 
 LevelViewBase::~LevelViewBase()

@@ -49,9 +49,9 @@ void HomeScreenViewBase::buttonCallbackHandler(const touchgfx::AbstractButton& s
     if (&src == &start)
     {
         //Interaction1
-        //When start clicked change screen to Level
-        //Go to Level with screen transition towards East
-        application().gotoLevelScreenCoverTransitionEast();
+        //When start clicked change screen to Screen1
+        //Go to Screen1 with screen transition towards East
+        application().gotoScreen1ScreenCoverTransitionEast();
     }
     if (&src == &instruction)
     {

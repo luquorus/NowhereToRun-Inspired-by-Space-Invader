@@ -1,0 +1,5 @@
+../../TouchGFX/gui/include/gui/victory_screen/VictoryPresenter.hpp:28:13:VictoryPresenter::~VictoryPresenter()	1
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/victory_screen/VictoryPresenter.cpp:10:6:virtual void VictoryPresenter::activate()	1
+../../TouchGFX/gui/include/gui/victory_screen/VictoryPresenter.hpp:28:13:virtual VictoryPresenter::~VictoryPresenter()	1
+../../TouchGFX/gui/include/gui/victory_screen/VictoryPresenter.hpp:28:13:virtual void* VictoryPresenter::_ZThn4_N16VictoryPresenterD1Ev()	1
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/victory_screen/VictoryPresenter.cpp:4:1:VictoryPresenter::VictoryPresenter(VictoryView&)	1

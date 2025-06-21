@@ -28,6 +28,7 @@ protected:
      */
     touchgfx::Box __background;
     touchgfx::Image star_1;
+    touchgfx::Image star_2;
     touchgfx::Image screen1;
     touchgfx::Image hp1;
     touchgfx::Image hp2;
@@ -62,6 +63,7 @@ protected:
     touchgfx::Image tulong;
     touchgfx::TextAreaWithOneWildcard score;
     touchgfx::TextAreaWithOneWildcard textArea1;
+    touchgfx::TextAreaWithOneWildcard level;
 
     /*
      * Wildcard Buffers
@@ -70,6 +72,8 @@ protected:
     touchgfx::Unicode::UnicodeChar scoreBuffer[SCORE_SIZE];
     static const uint16_t TEXTAREA1_SIZE = 10;
     touchgfx::Unicode::UnicodeChar textArea1Buffer[TEXTAREA1_SIZE];
+    static const uint16_t LEVEL_SIZE = 10;
+    touchgfx::Unicode::UnicodeChar levelBuffer[LEVEL_SIZE];
 
 private:
 

@@ -1,0 +1,8 @@
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:144:18:virtual void touchgfx::Screen::handleTickEvent()	0	static
+../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/victory_screen/VictoryView.cpp:13:6:virtual void VictoryView::tearDownScreen()	0	static
+../../TouchGFX/gui/include/gui/victory_screen/VictoryView.hpp:11:13:VictoryView::~VictoryView()	8	static
+../../TouchGFX/gui/include/gui/victory_screen/VictoryView.hpp:11:13:virtual VictoryView::~VictoryView()	8	static
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/victory_screen/VictoryView.cpp:3:1:VictoryView::VictoryView()	8	static
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/victory_screen/VictoryView.cpp:8:6:virtual void VictoryView::setupScreen()	0	static

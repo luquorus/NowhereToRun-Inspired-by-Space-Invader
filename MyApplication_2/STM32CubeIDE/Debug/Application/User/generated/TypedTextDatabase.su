@@ -1,6 +1,6 @@
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:44:43:const touchgfx::TypedText::TypedTextData* TypedTextDatabase::getInstance(touchgfx::LanguageId)	0	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:49:10:uint16_t TypedTextDatabase::getInstanceSize()	0	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:54:24:const touchgfx::Font** TypedTextDatabase::getFonts()	0	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:59:23:const touchgfx::Font* TypedTextDatabase::setFont(touchgfx::FontId, const touchgfx::Font*)	0	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:66:6:void TypedTextDatabase::resetFont(touchgfx::FontId)	8	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:84:1:cpp)	8	static
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:50:43:const touchgfx::TypedText::TypedTextData* TypedTextDatabase::getInstance(touchgfx::LanguageId)	0	static
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:55:10:uint16_t TypedTextDatabase::getInstanceSize()	0	static
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:60:24:const touchgfx::Font** TypedTextDatabase::getFonts()	0	static
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:65:23:const touchgfx::Font* TypedTextDatabase::setFont(touchgfx::FontId, const touchgfx::Font*)	0	static
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:72:6:void TypedTextDatabase::resetFont(touchgfx::FontId)	8	static
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/texts/src/TypedTextDatabase.cpp:93:1:cpp)	8	static

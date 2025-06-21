@@ -116,6 +116,9 @@ Application/User/generated/FrontendApplicationBase.o: \
  ../../TouchGFX/gui/include/gui/gameover_screen/GameOverView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/gameover_screen/GameOverViewBase.hpp \
  ../../TouchGFX/gui/include/gui/gameover_screen/GameOverPresenter.hpp \
+ ../../TouchGFX/gui/include/gui/victory_screen/VictoryView.hpp \
+ ../../TouchGFX/generated/gui_generated/include/gui_generated/victory_screen/VictoryViewBase.hpp \
+ ../../TouchGFX/gui/include/gui/victory_screen/VictoryPresenter.hpp \
  ../../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp
@@ -235,6 +238,9 @@ Application/User/generated/FrontendApplicationBase.o: \
 ../../TouchGFX/gui/include/gui/gameover_screen/GameOverView.hpp:
 ../../TouchGFX/generated/gui_generated/include/gui_generated/gameover_screen/GameOverViewBase.hpp:
 ../../TouchGFX/gui/include/gui/gameover_screen/GameOverPresenter.hpp:
+../../TouchGFX/gui/include/gui/victory_screen/VictoryView.hpp:
+../../TouchGFX/generated/gui_generated/include/gui_generated/victory_screen/VictoryViewBase.hpp:
+../../TouchGFX/gui/include/gui/victory_screen/VictoryPresenter.hpp:
 ../../TouchGFX/generated/texts/include/texts/TextKeysAndLanguages.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/platform/driver/lcd/LCD16bpp.hpp:
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/lcd/LCD16DebugPrinter.hpp:

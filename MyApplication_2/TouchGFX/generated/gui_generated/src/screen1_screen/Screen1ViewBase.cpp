@@ -16,6 +16,10 @@ Screen1ViewBase::Screen1ViewBase()
     star_1.setBitmap(touchgfx::Bitmap(BITMAP_STAR_ID));
     add(star_1);
 
+    star_2.setXY(-8, 268);
+    star_2.setBitmap(touchgfx::Bitmap(BITMAP_STAR_ID));
+    add(star_2);
+
     screen1.setXY(0, 0);
     screen1.setBitmap(touchgfx::Bitmap(BITMAP_SCREEN1_ID));
     add(screen1);
@@ -167,6 +171,15 @@ Screen1ViewBase::Screen1ViewBase()
     textArea1.resizeToCurrentText();
     textArea1.setTypedText(touchgfx::TypedText(T___SINGLEUSE_82AK));
     add(textArea1);
+
+    level.setXY(135, 8);
+    level.setColor(touchgfx::Color::getColorFromRGB(255, 250, 237));
+    level.setLinespacing(0);
+    Unicode::snprintf(levelBuffer, LEVEL_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_72BN).getText());
+    level.setWildcard(levelBuffer);
+    level.resizeToCurrentText();
+    level.setTypedText(touchgfx::TypedText(T___SINGLEUSE_14L5));
+    add(level);
 }
 
 Screen1ViewBase::~Screen1ViewBase()

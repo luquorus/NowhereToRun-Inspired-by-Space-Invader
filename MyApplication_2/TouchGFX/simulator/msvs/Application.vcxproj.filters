@@ -244,6 +244,18 @@
     <Filter Include="Source Files\generated\gui_generated\level_screen">
       <UniqueIdentifier>6B231A2E-5905-3A0A-03EB-FD9DED7E91E2</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\gui\victory_screen">
+      <UniqueIdentifier>5AEF88C6-13E5-926B-20F1-ACF1B7609942</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui\victory_screen">
+      <UniqueIdentifier>1EC9F413-60D2-123B-CE7B-83D5478349D6</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\generated\gui_generated\victory_screen">
+      <UniqueIdentifier>B89A4403-A29C-D627-9997-2F23475535D0</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\generated\gui_generated\victory_screen">
+      <UniqueIdentifier>0018282E-F29B-A9A7-96D6-94369AB29B0B</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(TouchGFXReleasePath)\framework\source\platform\driver\touch\SDL2TouchController.cpp">
@@ -329,6 +341,15 @@
     </ClCompile>
     <ClCompile Include="..\..\generated\gui_generated\src\level_screen\LevelViewBase.cpp">
       <Filter>Source Files\generated\gui_generated\level_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\victory_screen\VictoryPresenter.cpp">
+      <Filter>Source Files\gui\victory_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\gui\src\victory_screen\VictoryView.cpp">
+      <Filter>Source Files\gui\victory_screen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\generated\gui_generated\src\victory_screen\VictoryViewBase.cpp">
+      <Filter>Source Files\generated\gui_generated\victory_screen</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -825,6 +846,15 @@
     </ClInclude>
     <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\level_screen\LevelViewBase.hpp">
       <Filter>Header Files\generated\gui_generated\level_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\victory_screen\VictoryPresenter.hpp">
+      <Filter>Header Files\gui\victory_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\gui\include\gui\victory_screen\VictoryView.hpp">
+      <Filter>Header Files\gui\victory_screen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\generated\gui_generated\include\gui_generated\victory_screen\VictoryViewBase.hpp">
+      <Filter>Header Files\generated\gui_generated\victory_screen</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
