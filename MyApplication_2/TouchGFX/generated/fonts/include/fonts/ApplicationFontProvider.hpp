@@ -14,17 +14,23 @@ class FlashDataReader;
 struct Typography
 {
     static const touchgfx::FontId DEFAULT = 0;
-    static const touchgfx::FontId LARGE = 1;
-    static const touchgfx::FontId SMALL = 2;
-    static const touchgfx::FontId LEVEL = 3;
+    static const touchgfx::FontId DEFAULT_AUTO_GENERATED_FOR_GB = 1;
+    static const touchgfx::FontId LARGE = 2;
+    static const touchgfx::FontId SMALL = 3;
+    static const touchgfx::FontId LEVEL = 4;
+    static const touchgfx::FontId TYPOGRAPHY_00 = 5;
+    static const touchgfx::FontId TYPOGRAPHY_01 = 6;
 };
 
 struct TypographyFontIndex
 {
-    static const touchgfx::FontId DEFAULT = 0; // verdana_20_4bpp
-    static const touchgfx::FontId LARGE = 1;   // verdana_40_4bpp
-    static const touchgfx::FontId SMALL = 2;   // verdana_10_4bpp
-    static const touchgfx::FontId LEVEL = 3;   // ROCKI_TTF_18_4bpp
+    static const touchgfx::FontId DEFAULT = 0;                       // verdana_20_4bpp
+    static const touchgfx::FontId DEFAULT_AUTO_GENERATED_FOR_GB = 0; // verdana_20_4bpp
+    static const touchgfx::FontId LARGE = 1;                         // verdana_40_4bpp
+    static const touchgfx::FontId SMALL = 2;                         // SegUIVar_14_4bpp
+    static const touchgfx::FontId LEVEL = 3;                         // FRAHV_TTF_18_4bpp
+    static const touchgfx::FontId TYPOGRAPHY_00 = 0;                 // verdana_20_4bpp
+    static const touchgfx::FontId TYPOGRAPHY_01 = 0;                 // verdana_20_4bpp
     static const uint16_t NUMBER_OF_FONTS = 4;
 };
 

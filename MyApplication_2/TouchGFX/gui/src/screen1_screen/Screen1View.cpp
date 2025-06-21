@@ -50,6 +50,22 @@ void Screen1View::setupScreen()
 {
     Screen1ViewBase::setupScreen();
 
+    //Scoring
+    currentScore = 0;
+    highScore = 0;
+
+    // Gán buffer trước, rồi snprintf
+    score.setWildcard(scoreBuffer);
+    Unicode::snprintf(scoreBuffer, 10, "%d", currentScore);
+    score.invalidate();
+
+    textArea1.setWildcard(highScoreBuffer); // <- highscore
+    Unicode::snprintf(highScoreBuffer, 10, "%d", highScore);
+    textArea1.invalidate();
+
+
+
+
     // Gán enemy xen kẽ sb và c7
     enemies[0] = &sb1; enemies[1] = &c71; enemies[2] = &sb2;
     enemies[3] = &c72; enemies[4] = &sb3; enemies[5] = &c73;
@@ -152,6 +168,8 @@ void Screen1View::handleTickEvent()
             starActive = false;
             stone.setVisible(false);
             stoneActive = false;
+
+            triggerGameOver();
 
         }
 
@@ -356,6 +374,7 @@ void Screen1View::updateStarMovement()
         {
             star.setVisible(false);
             starActive = false;
+            addScore(1);
         }
     }
 }
@@ -554,7 +573,7 @@ void Screen1View::damageTulong()
             stoneActive = false;
         }
 
-        // TODO: Thêm logic game over ở đây nếu cần
+        triggerGameOver();
     }
 
     updateHealthDisplay();
@@ -568,8 +587,7 @@ void Screen1View::destroyEnemy(int enemyIndex)
     enemyAlive[enemyIndex] = false;
     enemies[enemyIndex]->setVisible(false);
 
-    // TODO: Có thể thêm hiệu ứng explosion hoặc animation ở đây
-    // TODO: Thêm điểm số khi tiêu diệt enemy
+    addScore(1);
 }
 
 void Screen1View::updateHealthDisplay()
@@ -639,7 +657,9 @@ int Screen1View::getTulongX()
 
 bool Screen1View::isTulongAtLeftBoundary()
 {
+	 return tulong.getX() <= TULONG_MIN_X;
 }
+
 
 bool Screen1View::isTulongAtRightBoundary()
 {
@@ -678,3 +698,31 @@ uint32_t Screen1View::getHardwareRandom()
 //        return (tickCount * 7 + 13); // Simple fallback
     }
 }
+
+void Screen1View::triggerGameOver()
+{
+    // Ẩn đạn
+    star.setVisible(false);
+    stone.setVisible(false);
+    starActive = false;
+    stoneActive = false;
+
+    // Gọi chuyển màn hình
+    application().gotoGameOverScreenNoTransition();
+}
+
+void Screen1View::addScore(int amount)
+{
+	currentScore += amount;
+	Unicode::snprintf(scoreBuffer, 10, "%d", currentScore);
+	score.invalidate(); // Không cần setWildcard lại nếu đã làm ở setup
+
+	if (currentScore > highScore)
+	{
+	    highScore = currentScore;
+	    Unicode::snprintf(highScoreBuffer, 10, "%d", highScore);
+	    textArea1.invalidate(); // Cũng không cần setWildcard lại nếu đã làm ở setup
+	}
+
+}
+

@@ -1,29 +1,31 @@
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	1
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:110:6:virtual void Screen1View::tearDownScreen()	1
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:126:6:virtual void Screen1View::tearDownScreen()	1
 ../../TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp:16:13:Screen1View::~Screen1View()	1
 ../../TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp:16:13:virtual Screen1View::~Screen1View()	1
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	1
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:346:6:void Screen1View::updateStarMovement()	3
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:363:6:void Screen1View::updateStoneMovement()	3
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:382:6:bool Screen1View::checkCollision(const CollisionBox&, const CollisionBox&)	4
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:390:27:Screen1View::CollisionBox Screen1View::getImageCollisionBox(touchgfx::Image*)	1
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:563:6:void Screen1View::destroyEnemy(int)	3
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:575:6:void Screen1View::updateHealthDisplay()	1
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:509:6:void Screen1View::damageStraw(int)	6
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:451:6:void Screen1View::handleStoneCollisions()	10
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:538:6:void Screen1View::damageTulong()	4
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:400:6:void Screen1View::handleCollisions()	9
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:609:5:int Screen1View::getClosestEnemy()	4
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:317:6:void Screen1View::handleTulongShooting()	6
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:635:5:int Screen1View::getTulongX()	1
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:640:6:bool Screen1View::isTulongAtLeftBoundary()	0
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:644:6:bool Screen1View::isTulongAtRightBoundary()	1
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:649:6:void Screen1View::initHardwareRNG()	1
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:382:6:void Screen1View::updateStoneMovement()	3
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:401:6:bool Screen1View::checkCollision(const CollisionBox&, const CollisionBox&)	4
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:409:27:Screen1View::CollisionBox Screen1View::getImageCollisionBox(touchgfx::Image*)	1
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:593:6:void Screen1View::updateHealthDisplay()	1
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:528:6:void Screen1View::damageStraw(int)	6
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:627:5:int Screen1View::getClosestEnemy()	4
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:335:6:void Screen1View::handleTulongShooting()	6
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:653:5:int Screen1View::getTulongX()	1
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:658:6:bool Screen1View::isTulongAtLeftBoundary()	1
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:664:6:bool Screen1View::isTulongAtRightBoundary()	1
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:669:6:void Screen1View::initHardwareRNG()	1
 D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:11:1:Screen1View::Screen1View()	1
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:665:10:uint32_t Screen1View::getHardwareRandom()	1
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:584:5:int Screen1View::getRandomAliveEnemy()	4
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:288:6:void Screen1View::handleEnemyShooting()	5
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:685:10:uint32_t Screen1View::getHardwareRandom()	1
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:602:5:int Screen1View::getRandomAliveEnemy()	4
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:306:6:void Screen1View::handleEnemyShooting()	5
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:702:6:void Screen1View::triggerGameOver()	1
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:557:6:void Screen1View::damageTulong()	4
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:419:6:void Screen1View::handleCollisions()	9
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:247:6:void Screen1View::handleTulongMovement()	6
 D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:49:6:virtual void Screen1View::setupScreen()	3
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:229:6:void Screen1View::handleTulongMovement()	6
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:115:6:virtual void Screen1View::handleTickEvent()	19
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:714:6:void Screen1View::addScore(int)	2
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:364:6:void Screen1View::updateStarMovement()	3
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:582:6:void Screen1View::destroyEnemy(int)	3
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:470:6:void Screen1View::handleStoneCollisions()	10
+D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:131:6:virtual void Screen1View::handleTickEvent()	19

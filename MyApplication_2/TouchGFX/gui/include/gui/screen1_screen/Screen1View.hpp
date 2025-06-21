@@ -18,6 +18,9 @@ public:
     virtual void setupScreen();
     virtual void tearDownScreen();
     virtual void handleTickEvent(); // Để cập nhật chuyển động zigzag
+    void triggerGameOver();
+    void addScore(int amount);
+
 
 protected:
 protected:
@@ -25,6 +28,14 @@ protected:
     static const int NUM_ROWS = 3;
     static const int NUM_COLS = 6;
     static const int NUM_ENEMIES = NUM_ROWS * NUM_COLS;
+
+    // Scoring
+    int currentScore;
+    int highScore;
+    Unicode::UnicodeChar scoreBuffer[10];
+    Unicode::UnicodeChar highScoreBuffer[10];
+
+
 
     // Enemy Image pointers & positions
     touchgfx::Image* enemies[NUM_ENEMIES];
