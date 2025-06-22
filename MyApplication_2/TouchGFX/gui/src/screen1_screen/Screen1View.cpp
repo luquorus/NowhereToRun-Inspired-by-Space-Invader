@@ -25,13 +25,11 @@ tulongHealth(MAX_HEALTH), tulongAlive(true), tulongX(0)
     starY = 0;
     shootCooldown = 0;
 
-    // Khởi tạo hệ thống bắn của tulong
     stoneActive = false;
     stoneX = 0;
     stoneY = 0;
     tulongShootCooldown = 0;
 
-    // Khởi tạo tulong movement
     tulongX = 0;
 
     for (int i = 0; i < 3; i++) {
@@ -52,7 +50,6 @@ void Screen1View::setupScreen()
     //Scoring
     currentScore = 0;
 
-    // Gán buffer trước, rồi snprintf
     score.setWildcard(scoreBuffer);
     Unicode::snprintf(scoreBuffer, 10, "%d", currentScore);
     score.invalidate();
@@ -99,20 +96,18 @@ void Screen1View::setupScreen()
         }
     }
 
-    // Khởi tạo đạn star (enemies)
+    // Khởi tạo đạn
     star.setVisible(false); // Ẩn đạn ban đầu
     starActive = false;
 
-    // Khởi tạo đạn stone (tulong)
-    stone.setVisible(false); // Ẩn đạn ban đầu
+    stone.setVisible(false);
     stoneActive = false;
 
-    // Khởi tạo tulong position
     tulongX = tulong.getX(); // Store initial position
 
     // Khởi tạo health system - mỗi straw có mạng riêng
     for (int i = 0; i < 3; i++) {
-        strawHealth[i] = MAX_HEALTH; // Mỗi straw có 3 mạng riêng
+        strawHealth[i] = 6; // Mỗi straw có 6 mạng riêng
         strawAlive[i] = true;
     }
     tulongHealth = MAX_HEALTH;
@@ -125,7 +120,7 @@ void Screen1View::setupScreen()
     tulong.setVisible(tulongAlive);
 
     updateHealthDisplay();
-    invalidate(); // Cập nhật giao diện
+    invalidate();
 }
 
 void Screen1View::tearDownScreen()
@@ -137,10 +132,9 @@ void Screen1View::handleTickEvent()
 {
     tickCount++;
 
-    // Handle tulong movement from queue messages EVERY tick for responsiveness
     if (tickCount % 3 != 0) handleTulongMovement();
 
-    // Chỉ xử lý game logic mỗi ticks
+    // Chỉ xử lý game logic mỗi 10 ticks
     if (tickCount % 10 != 0) return;
 
     // Nếu đang trong quá trình dimming -> nhấp nháy
@@ -709,7 +703,7 @@ uint32_t Screen1View::getHardwareRandom()
     }
     else
     {
-//        return (tickCount * 7 + 13); // Simple fallback
+        return (tickCount * 7 + 13); // Simple fallback
     }
 }
 

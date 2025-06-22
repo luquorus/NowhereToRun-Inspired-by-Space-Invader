@@ -17,7 +17,7 @@ public:
 
     virtual void setupScreen();
     virtual void tearDownScreen();
-    virtual void handleTickEvent(); // Để cập nhật chuyển động zigzag
+    virtual void handleTickEvent();
     void triggerGameOver();
     void triggerVictory();
     void addScore(int amount);
