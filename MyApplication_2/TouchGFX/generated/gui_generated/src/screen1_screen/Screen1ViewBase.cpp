@@ -154,7 +154,7 @@ Screen1ViewBase::Screen1ViewBase()
     tulong.setBitmap(touchgfx::Bitmap(BITMAP_TULONG_ID));
     add(tulong);
 
-    score.setXY(16, 15);
+    score.setXY(202, 15);
     score.setColor(touchgfx::Color::getColorFromRGB(255, 253, 245));
     score.setLinespacing(0);
     Unicode::snprintf(scoreBuffer, SCORE_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_W7SC).getText());
@@ -163,7 +163,7 @@ Screen1ViewBase::Screen1ViewBase()
     score.setTypedText(touchgfx::TypedText(T___SINGLEUSE_F3YA));
     add(score);
 
-    textArea1.setXY(201, 15);
+    textArea1.setXY(15, 15);
     textArea1.setColor(touchgfx::Color::getColorFromRGB(255, 250, 232));
     textArea1.setLinespacing(0);
     Unicode::snprintf(textArea1Buffer, TEXTAREA1_SIZE, "%s", touchgfx::TypedText(T___SINGLEUSE_4MLN).getText());

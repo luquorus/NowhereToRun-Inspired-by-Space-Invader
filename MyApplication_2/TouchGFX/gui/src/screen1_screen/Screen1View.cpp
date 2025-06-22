@@ -699,8 +699,7 @@ void Screen1View::initHardwareRNG()
     // Initialize RNG
     if (HAL_RNG_Init(&hrng) != HAL_OK)
     {
-        // Handle initialization error
-        // Có thể log error hoặc fallback về random method khác
+
     }
 }
 
