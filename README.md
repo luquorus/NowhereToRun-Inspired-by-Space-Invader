@@ -6,7 +6,7 @@
 
 ## Overview
 
-**"Nowhere To Run"** is an embedded shooting game built on the STM32F429ZIT6 microcontroller, inspired by the classic **Space Invaders** arcade game. Players control a character named **"Phú ông"** (Rich Old Man) who must eliminate two enemies ("Cậu cả" and "Cậu út" – First and Second Son) by shooting "rocks" before they reach the bottom boundary or deplete the player’s health.
+**"Nowhere To Run"** is an embedded shooting game built on the STM32F429ZIT6 microcontroller, inspired by the classic **Space Invaders** arcade game. Players control a character named **"Phú ông"** (Rich Old Man) who must eliminate two enemies ("Cậu cả" and "Cậu út" – First and Second Son) (a.k.a Tu Long, Cuong Seven, SOOBIN from ATVNCG) by shooting "rocks" before they reach the bottom boundary or deplete the player’s health.
 
 The game is developed using **FreeRTOS** for multitasking and **TouchGFX** for smooth GUI rendering. The system interacts with physical buttons, uses a buzzer for audio feedback, and integrates the STM32 hardware random number generator (RNG) for unpredictability.
 
