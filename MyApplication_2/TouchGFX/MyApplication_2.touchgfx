@@ -467,7 +467,7 @@
           {
             "Type": "TextArea",
             "Name": "score",
-            "X": 16,
+            "X": 202,
             "Y": 15,
             "Width": 24,
             "Height": 14,
@@ -488,7 +488,7 @@
           {
             "Type": "TextArea",
             "Name": "textArea1",
-            "X": 201,
+            "X": 15,
             "Y": 15,
             "Width": 24,
             "Height": 14,

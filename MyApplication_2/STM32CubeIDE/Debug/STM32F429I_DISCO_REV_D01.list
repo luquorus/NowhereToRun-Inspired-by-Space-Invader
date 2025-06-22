@@ -10552,11 +10552,11 @@ Screen1ViewBase::Screen1ViewBase()
  8004058:	f8c4 82c0 	str.w	r8, [r4, #704]	@ 0x2c0
         boundingArea = calculateBoundingArea();
  800405c:	4649      	mov	r1, r9
- 800405e:	4638      	mov	r0, r7
- 8004060:	f8d3 3084 	ldr.w	r3, [r3, #132]	@ 0x84
+ 800405e:	f8d3 3084 	ldr.w	r3, [r3, #132]	@ 0x84
         linespace = space;
- 8004064:	f8a4 b2c4 	strh.w	fp, [r4, #708]	@ 0x2c4
+ 8004062:	f8a4 b2c4 	strh.w	fp, [r4, #708]	@ 0x2c4
         boundingArea = calculateBoundingArea();
+ 8004066:	4638      	mov	r0, r7
  8004068:	4798      	blx	r3
  800406a:	e897 0007 	ldmia.w	r7, {r0, r1, r2}
  800406e:	f504 7333 	add.w	r3, r4, #716	@ 0x2cc
@@ -10618,11 +10618,11 @@ Screen1ViewBase::Screen1ViewBase()
  80040f2:	2263      	movs	r2, #99	@ 0x63
  80040f4:	9811      	ldr	r0, [sp, #68]	@ 0x44
  80040f6:	21d2      	movs	r1, #210	@ 0xd2
- 80040f8:	2710      	movs	r7, #16
+ 80040f8:	2610      	movs	r6, #16
  80040fa:	f7ff f922 	bl	8003342 <_ZN8touchgfx8Drawable5setXYEss>
     sb9.setBitmap(touchgfx::Bitmap(BITMAP_SOOBIN_ID));
  80040fe:	9811      	ldr	r0, [sp, #68]	@ 0x44
- 8004100:	f8ad 70a0 	strh.w	r7, [sp, #160]	@ 0xa0
+ 8004100:	f8ad 60a0 	strh.w	r6, [sp, #160]	@ 0xa0
  8004104:	a928      	add	r1, sp, #160	@ 0xa0
  8004106:	f009 fcf6 	bl	800daf6 <_ZN8touchgfx5Image9setBitmapERKNS_6BitmapE>
  800410a:	9911      	ldr	r1, [sp, #68]	@ 0x44
@@ -10635,7 +10635,7 @@ Screen1ViewBase::Screen1ViewBase()
  8004118:	f7ff f913 	bl	8003342 <_ZN8touchgfx8Drawable5setXYEss>
     sb8.setBitmap(touchgfx::Bitmap(BITMAP_SOOBIN_ID));
  800411c:	9812      	ldr	r0, [sp, #72]	@ 0x48
- 800411e:	f8ad 70a0 	strh.w	r7, [sp, #160]	@ 0xa0
+ 800411e:	f8ad 60a0 	strh.w	r6, [sp, #160]	@ 0xa0
  8004122:	a928      	add	r1, sp, #160	@ 0xa0
  8004124:	f009 fce7 	bl	800daf6 <_ZN8touchgfx5Image9setBitmapERKNS_6BitmapE>
  8004128:	9912      	ldr	r1, [sp, #72]	@ 0x48
@@ -10648,7 +10648,7 @@ Screen1ViewBase::Screen1ViewBase()
  8004136:	f7ff f904 	bl	8003342 <_ZN8touchgfx8Drawable5setXYEss>
     sb7.setBitmap(touchgfx::Bitmap(BITMAP_SOOBIN_ID));
  800413a:	9813      	ldr	r0, [sp, #76]	@ 0x4c
- 800413c:	f8ad 70a0 	strh.w	r7, [sp, #160]	@ 0xa0
+ 800413c:	f8ad 60a0 	strh.w	r6, [sp, #160]	@ 0xa0
  8004140:	a928      	add	r1, sp, #160	@ 0xa0
  8004142:	f009 fcd8 	bl	800daf6 <_ZN8touchgfx5Image9setBitmapERKNS_6BitmapE>
  8004146:	9913      	ldr	r1, [sp, #76]	@ 0x4c
@@ -10661,7 +10661,7 @@ Screen1ViewBase::Screen1ViewBase()
  8004154:	f7ff f8f5 	bl	8003342 <_ZN8touchgfx8Drawable5setXYEss>
     sb6.setBitmap(touchgfx::Bitmap(BITMAP_SOOBIN_ID));
  8004158:	9814      	ldr	r0, [sp, #80]	@ 0x50
- 800415a:	f8ad 70a0 	strh.w	r7, [sp, #160]	@ 0xa0
+ 800415a:	f8ad 60a0 	strh.w	r6, [sp, #160]	@ 0xa0
  800415e:	a928      	add	r1, sp, #160	@ 0xa0
  8004160:	f009 fcc9 	bl	800daf6 <_ZN8touchgfx5Image9setBitmapERKNS_6BitmapE>
  8004164:	9914      	ldr	r1, [sp, #80]	@ 0x50
@@ -10674,7 +10674,7 @@ Screen1ViewBase::Screen1ViewBase()
  8004172:	f7ff f8e6 	bl	8003342 <_ZN8touchgfx8Drawable5setXYEss>
     sb5.setBitmap(touchgfx::Bitmap(BITMAP_SOOBIN_ID));
  8004176:	9815      	ldr	r0, [sp, #84]	@ 0x54
- 8004178:	f8ad 70a0 	strh.w	r7, [sp, #160]	@ 0xa0
+ 8004178:	f8ad 60a0 	strh.w	r6, [sp, #160]	@ 0xa0
  800417c:	a928      	add	r1, sp, #160	@ 0xa0
  800417e:	f009 fcba 	bl	800daf6 <_ZN8touchgfx5Image9setBitmapERKNS_6BitmapE>
  8004182:	9915      	ldr	r1, [sp, #84]	@ 0x54
@@ -10687,7 +10687,7 @@ Screen1ViewBase::Screen1ViewBase()
  8004190:	f7ff f8d7 	bl	8003342 <_ZN8touchgfx8Drawable5setXYEss>
     sb4.setBitmap(touchgfx::Bitmap(BITMAP_SOOBIN_ID));
  8004194:	9816      	ldr	r0, [sp, #88]	@ 0x58
- 8004196:	f8ad 70a0 	strh.w	r7, [sp, #160]	@ 0xa0
+ 8004196:	f8ad 60a0 	strh.w	r6, [sp, #160]	@ 0xa0
  800419a:	a928      	add	r1, sp, #160	@ 0xa0
  800419c:	f009 fcab 	bl	800daf6 <_ZN8touchgfx5Image9setBitmapERKNS_6BitmapE>
  80041a0:	9916      	ldr	r1, [sp, #88]	@ 0x58
@@ -10700,7 +10700,7 @@ Screen1ViewBase::Screen1ViewBase()
  80041ae:	f7ff f8c8 	bl	8003342 <_ZN8touchgfx8Drawable5setXYEss>
     sb3.setBitmap(touchgfx::Bitmap(BITMAP_SOOBIN_ID));
  80041b2:	9817      	ldr	r0, [sp, #92]	@ 0x5c
- 80041b4:	f8ad 70a0 	strh.w	r7, [sp, #160]	@ 0xa0
+ 80041b4:	f8ad 60a0 	strh.w	r6, [sp, #160]	@ 0xa0
  80041b8:	a928      	add	r1, sp, #160	@ 0xa0
  80041ba:	f009 fc9c 	bl	800daf6 <_ZN8touchgfx5Image9setBitmapERKNS_6BitmapE>
  80041be:	9917      	ldr	r1, [sp, #92]	@ 0x5c
@@ -10713,7 +10713,7 @@ Screen1ViewBase::Screen1ViewBase()
  80041cc:	f7ff f8b9 	bl	8003342 <_ZN8touchgfx8Drawable5setXYEss>
     sb2.setBitmap(touchgfx::Bitmap(BITMAP_SOOBIN_ID));
  80041d0:	9818      	ldr	r0, [sp, #96]	@ 0x60
- 80041d2:	f8ad 70a0 	strh.w	r7, [sp, #160]	@ 0xa0
+ 80041d2:	f8ad 60a0 	strh.w	r6, [sp, #160]	@ 0xa0
  80041d6:	a928      	add	r1, sp, #160	@ 0xa0
  80041d8:	f009 fc8d 	bl	800daf6 <_ZN8touchgfx5Image9setBitmapERKNS_6BitmapE>
  80041dc:	9918      	ldr	r1, [sp, #96]	@ 0x60
@@ -10726,7 +10726,7 @@ Screen1ViewBase::Screen1ViewBase()
  80041ea:	f7ff f8aa 	bl	8003342 <_ZN8touchgfx8Drawable5setXYEss>
     sb1.setBitmap(touchgfx::Bitmap(BITMAP_SOOBIN_ID));
  80041ee:	9819      	ldr	r0, [sp, #100]	@ 0x64
- 80041f0:	f8ad 70a0 	strh.w	r7, [sp, #160]	@ 0xa0
+ 80041f0:	f8ad 60a0 	strh.w	r6, [sp, #160]	@ 0xa0
  80041f4:	a928      	add	r1, sp, #160	@ 0xa0
  80041f6:	f009 fc7e 	bl	800daf6 <_ZN8touchgfx5Image9setBitmapERKNS_6BitmapE>
  80041fa:	9919      	ldr	r1, [sp, #100]	@ 0x64
@@ -10868,10 +10868,10 @@ Screen1ViewBase::Screen1ViewBase()
  800433a:	9923      	ldr	r1, [sp, #140]	@ 0x8c
  800433c:	4628      	mov	r0, r5
  800433e:	f006 faa7 	bl	800a890 <_ZN8touchgfx9Container3addERNS_8DrawableE>
-    score.setXY(16, 15);
+    score.setXY(202, 15);
  8004342:	9805      	ldr	r0, [sp, #20]
  8004344:	4652      	mov	r2, sl
- 8004346:	4639      	mov	r1, r7
+ 8004346:	21ca      	movs	r1, #202	@ 0xca
  8004348:	f7fe fffb 	bl	8003342 <_ZN8touchgfx8Drawable5setXYEss>
         color = newColor;
  800434c:	4b58      	ldr	r3, [pc, #352]	@ (80044b0 <_ZN15Screen1ViewBaseC1Ev+0x908>)
@@ -10931,10 +10931,10 @@ Screen1ViewBase::Screen1ViewBase()
  80043c2:	9905      	ldr	r1, [sp, #20]
  80043c4:	4628      	mov	r0, r5
  80043c6:	f006 fa63 	bl	800a890 <_ZN8touchgfx9Container3addERNS_8DrawableE>
-    textArea1.setXY(201, 15);
+    textArea1.setXY(15, 15);
  80043ca:	4652      	mov	r2, sl
- 80043cc:	9806      	ldr	r0, [sp, #24]
- 80043ce:	21c9      	movs	r1, #201	@ 0xc9
+ 80043cc:	4651      	mov	r1, sl
+ 80043ce:	9806      	ldr	r0, [sp, #24]
  80043d0:	f7fe ffb7 	bl	8003342 <_ZN8touchgfx8Drawable5setXYEss>
         color = newColor;
  80043d4:	4b3f      	ldr	r3, [pc, #252]	@ (80044d4 <_ZN15Screen1ViewBaseC1Ev+0x92c>)
@@ -12717,8 +12717,7 @@ void Screen1View::initHardwareRNG()
     if (HAL_RNG_Init(&hrng) != HAL_OK)
  8004e80:	f600 1038 	addw	r0, r0, #2360	@ 0x938
     {
-        // Handle initialization error
-        // Có thể log error hoặc fallback về random method khác
+
     }
 }
  8004e84:	b002      	add	sp, #8
