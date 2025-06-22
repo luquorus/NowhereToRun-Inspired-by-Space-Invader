@@ -283,7 +283,6 @@ void Screen1View::handleTulongMovement()
                 break;
 
             default:
-                // Invalid command, do nothing
                 return;
         }
 
@@ -292,18 +291,15 @@ void Screen1View::handleTulongMovement()
         {
             tulong.setX(newX);
             tulongX = newX; // Update stored position
-            invalidate(); // Force redraw immediately
+            invalidate();
         }
     }
     else if (status == osErrorTimeout)
     {
-        // No message available, this is normal
         return;
     }
     else
     {
-        // Other error occurred
-        // Handle error if needed
         return;
     }
 }

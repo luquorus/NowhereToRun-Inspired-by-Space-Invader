@@ -1,5 +1,5 @@
 Application/User/generated/GameOverViewBase.o: \
- D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/gui_generated/src/gameover_screen/GameOverViewBase.cpp \
+ D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/gui_generated/src/gameover_screen/GameOverViewBase.cpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/gameover_screen/GameOverViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \

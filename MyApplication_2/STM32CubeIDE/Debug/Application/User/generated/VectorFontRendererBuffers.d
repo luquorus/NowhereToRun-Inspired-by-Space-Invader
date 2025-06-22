@@ -1,5 +1,5 @@
 Application/User/generated/VectorFontRendererBuffers.o: \
- D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/fonts/src/VectorFontRendererBuffers.cpp \
+ D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/fonts/src/VectorFontRendererBuffers.cpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/VectorFontRendererImpl.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Types.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/hal/Config.hpp \

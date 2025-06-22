@@ -28,7 +28,7 @@ protected:
      * Member Declarations
      */
     touchgfx::Box __background;
-    touchgfx::Image homescreen;
+    touchgfx::Image image1;
     touchgfx::Button start;
     touchgfx::Button instruction;
     touchgfx::TextAreaWithOneWildcard highScoreText;

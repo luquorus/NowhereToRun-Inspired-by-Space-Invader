@@ -54,6 +54,7 @@
 "./Application/User/generated/image_InstructionScreen.o"
 "./Application/User/generated/image_Screen1.o"
 "./Application/User/generated/image_back.o"
+"./Application/User/generated/image_bg1.o"
 "./Application/User/generated/image_c7.o"
 "./Application/User/generated/image_continue.o"
 "./Application/User/generated/image_gameover.o"

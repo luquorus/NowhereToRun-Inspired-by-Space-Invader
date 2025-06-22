@@ -1,5 +1,5 @@
 Application/User/freertos.o: \
- D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/Core/Src/freertos.c \
+ D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/Core/Src/freertos.c \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  ../../Core/Inc/FreeRTOSConfig.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \

@@ -1,5 +1,5 @@
 Application/User/gui/LevelView.o: \
- D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/level_screen/LevelView.cpp \
+ D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/level_screen/LevelView.cpp \
  ../../TouchGFX/gui/include/gui/level_screen/LevelView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/level_screen/LevelViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \

@@ -1,5 +1,5 @@
 Application/User/generated/Table_SegUIVar_14_4bpp.o: \
- D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/fonts/src/Table_SegUIVar_14_4bpp.cpp \
+ D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/fonts/src/Table_SegUIVar_14_4bpp.cpp \
  ../../TouchGFX/generated/fonts/include/fonts/GeneratedFont.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/ConstFont.hpp \
  ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Font.hpp \

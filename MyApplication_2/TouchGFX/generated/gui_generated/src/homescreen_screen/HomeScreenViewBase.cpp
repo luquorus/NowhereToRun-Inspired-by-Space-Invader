@@ -13,9 +13,9 @@ HomeScreenViewBase::HomeScreenViewBase() :
     __background.setColor(touchgfx::Color::getColorFromRGB(0, 0, 0));
     add(__background);
 
-    homescreen.setXY(0, 0);
-    homescreen.setBitmap(touchgfx::Bitmap(BITMAP_HOMESCREEN_ID));
-    add(homescreen);
+    image1.setXY(0, 0);
+    image1.setBitmap(touchgfx::Bitmap(BITMAP_BG1_ID));
+    add(image1);
 
     start.setXY(24, 281);
     start.setBitmaps(touchgfx::Bitmap(BITMAP_START_ID), touchgfx::Bitmap(BITMAP_START_ID));

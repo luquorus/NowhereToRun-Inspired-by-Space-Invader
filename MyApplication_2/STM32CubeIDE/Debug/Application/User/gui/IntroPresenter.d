@@ -1,5 +1,5 @@
 Application/User/gui/IntroPresenter.o: \
- D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/intro_screen/IntroPresenter.cpp \
+ D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/intro_screen/IntroPresenter.cpp \
  ../../TouchGFX/gui/include/gui/intro_screen/IntroView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/intro_screen/IntroViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \

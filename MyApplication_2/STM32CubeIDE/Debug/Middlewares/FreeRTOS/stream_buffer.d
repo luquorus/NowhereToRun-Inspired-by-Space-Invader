@@ -1,5 +1,5 @@
 Middlewares/FreeRTOS/stream_buffer.o: \
- D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c \
+ D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  ../../Core/Inc/FreeRTOSConfig.h \
  ../../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h \

@@ -6,10 +6,10 @@
         "Components": [
           {
             "Type": "Image",
-            "Name": "homescreen",
+            "Name": "image1",
             "Width": 240,
             "Height": 320,
-            "RelativeFilename": "HomeScreen.png"
+            "RelativeFilename": "bg1.png"
           },
           {
             "Type": "Button",

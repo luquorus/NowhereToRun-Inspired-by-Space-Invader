@@ -1,32 +1,32 @@
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:104:18:virtual void touchgfx::Screen::afterTransition()	0	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Screen.hpp:154:18:virtual void touchgfx::Screen::handleKeyEvent(uint8_t)	0	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:131:6:virtual void Screen1View::tearDownScreen()	0	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:131:6:virtual void Screen1View::tearDownScreen()	0	static
 ../../TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp:16:13:Screen1View::~Screen1View()	8	static
 ../../TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp:16:13:virtual Screen1View::~Screen1View()	8	static
 ../../Middlewares/ST/touchgfx/framework/include/touchgfx/Drawable.hpp:343:10:void touchgfx::Drawable::setXY(int16_t, int16_t)	16	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:388:6:void Screen1View::updateStoneMovement()	0	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:407:6:bool Screen1View::checkCollision(const CollisionBox&, const CollisionBox&)	8	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:415:27:Screen1View::CollisionBox Screen1View::getImageCollisionBox(touchgfx::Image*)	0	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:615:6:void Screen1View::updateHealthDisplay()	0	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:534:6:void Screen1View::damageStraw(int)	4	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:649:5:int Screen1View::getClosestEnemy()	20	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:341:6:void Screen1View::handleTulongShooting()	8	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:675:5:int Screen1View::getTulongX()	0	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:680:6:bool Screen1View::isTulongAtLeftBoundary()	0	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:686:6:bool Screen1View::isTulongAtRightBoundary()	0	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:691:6:void Screen1View::initHardwareRNG()	8	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:11:1:Screen1View::Screen1View()	8	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:706:10:uint32_t Screen1View::getHardwareRandom()	16	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:624:5:int Screen1View::getRandomAliveEnemy()	80	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:311:6:void Screen1View::handleEnemyShooting()	24	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:747:6:void Screen1View::triggerGameOver()	8	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:563:6:void Screen1View::damageTulong()	8	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:425:6:void Screen1View::handleCollisions()	72	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:757:6:void Screen1View::triggerVictory()	8	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:252:6:void Screen1View::handleTulongMovement()	16	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:48:6:virtual void Screen1View::setupScreen()	48	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:720:6:void Screen1View::addScore(int)	8	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:370:6:void Screen1View::updateStarMovement()	0	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:588:6:void Screen1View::destroyEnemy(int)	8	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:476:6:void Screen1View::handleStoneCollisions()	72	static
-D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:136:6:virtual void Screen1View::handleTickEvent()	40	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:384:6:void Screen1View::updateStoneMovement()	0	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:403:6:bool Screen1View::checkCollision(const CollisionBox&, const CollisionBox&)	8	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:411:27:Screen1View::CollisionBox Screen1View::getImageCollisionBox(touchgfx::Image*)	0	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:611:6:void Screen1View::updateHealthDisplay()	0	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:530:6:void Screen1View::damageStraw(int)	4	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:645:5:int Screen1View::getClosestEnemy()	20	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:337:6:void Screen1View::handleTulongShooting()	8	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:671:5:int Screen1View::getTulongX()	0	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:676:6:bool Screen1View::isTulongAtLeftBoundary()	0	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:682:6:bool Screen1View::isTulongAtRightBoundary()	0	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:687:6:void Screen1View::initHardwareRNG()	8	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:11:1:Screen1View::Screen1View()	8	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:702:10:uint32_t Screen1View::getHardwareRandom()	16	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:620:5:int Screen1View::getRandomAliveEnemy()	80	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:307:6:void Screen1View::handleEnemyShooting()	24	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:743:6:void Screen1View::triggerGameOver()	8	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:559:6:void Screen1View::damageTulong()	8	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:421:6:void Screen1View::handleCollisions()	72	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:753:6:void Screen1View::triggerVictory()	8	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:252:6:void Screen1View::handleTulongMovement()	16	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:48:6:virtual void Screen1View::setupScreen()	48	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:716:6:void Screen1View::addScore(int)	8	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:366:6:void Screen1View::updateStarMovement()	0	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:584:6:void Screen1View::destroyEnemy(int)	8	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:472:6:void Screen1View::handleStoneCollisions()	72	static
+D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1View.cpp:136:6:virtual void Screen1View::handleTickEvent()	40	static

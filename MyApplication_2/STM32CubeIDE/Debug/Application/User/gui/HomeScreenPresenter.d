@@ -1,5 +1,5 @@
 Application/User/gui/HomeScreenPresenter.o: \
- D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/homescreen_screen/HomeScreenPresenter.cpp \
+ D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/homescreen_screen/HomeScreenPresenter.cpp \
  ../../TouchGFX/gui/include/gui/homescreen_screen/HomeScreenView.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/homescreen_screen/HomeScreenViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \

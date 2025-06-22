@@ -1,5 +1,5 @@
 Application/User/generated/VictoryViewBase.o: \
- D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/gui_generated/src/victory_screen/VictoryViewBase.cpp \
+ D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/generated/gui_generated/src/victory_screen/VictoryViewBase.cpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/victory_screen/VictoryViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/common/FrontendApplicationBase.hpp \

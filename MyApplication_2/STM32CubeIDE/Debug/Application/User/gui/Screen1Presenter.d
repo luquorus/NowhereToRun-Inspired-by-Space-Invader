@@ -1,5 +1,5 @@
 Application/User/gui/Screen1Presenter.o: \
- D:/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1Presenter.cpp \
+ D:/2024.2/prj/NowhereToRun-Inspired-by-Space-Invader/MyApplication_2/TouchGFX/gui/src/screen1_screen/Screen1Presenter.cpp \
  ../../TouchGFX/gui/include/gui/screen1_screen/Screen1View.hpp \
  ../../TouchGFX/generated/gui_generated/include/gui_generated/screen1_screen/Screen1ViewBase.hpp \
  ../../TouchGFX/gui/include/gui/common/FrontendApplication.hpp \
