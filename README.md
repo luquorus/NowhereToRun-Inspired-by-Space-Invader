@@ -1,6 +1,6 @@
 # Nowhere To Run - Inspired by Space Invaders
 
-> Graduation Capstone Project - Embedded Systems  
+> Capstone Project - Embedded Systems  
 > Hanoi University of Science and Technology  
 > School of Information and Communication Technology  
 
