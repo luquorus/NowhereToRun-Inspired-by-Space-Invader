@@ -436,6 +436,7 @@ void Screen1View::handleCollisions()
             {
                 // Va chạm với straw
                 damageStraw(i);
+                playSoundEffect(SOUND_HIT_BARRIER);
 
                 // Ẩn đạn
                 star.setVisible(false);
@@ -454,6 +455,7 @@ void Screen1View::handleCollisions()
         {
             // Va chạm với tulong
             damageTulong();
+            playSoundEffect(SOUND_ENEMY_HIT_PLAYER);
 
             // Ẩn đạn
             star.setVisible(false);
@@ -489,6 +491,7 @@ void Screen1View::handleStoneCollisions()
             {
                 // Va chạm với enemy -> phá hủy enemy
                 destroyEnemy(i);
+                playSoundEffect(SOUND_HIT_ENEMY);
 
                 // Ẩn đạn stone
                 stone.setVisible(false);
@@ -511,6 +514,7 @@ void Screen1View::handleStoneCollisions()
 			{
 				// Va chạm với straw (friendly fire)
 				damageStraw(i);
+				playSoundEffect(SOUND_ENEMY_HIT_BARRIER);
 
 				// Ẩn đạn stone
 				stone.setVisible(false);
@@ -754,3 +758,19 @@ void Screen1View::triggerVictory()
     application().gotoVictoryScreenNoTransition();
 }
 
+//Sound implementation
+void Screen1View::buzzerOn()
+{
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+}
+
+void Screen1View::buzzerOff()
+{
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+}
+
+void Screen1View::playSoundEffect(SoundEffect effect) {
+    buzzerOn();
+    osDelay(100);
+    buzzerOff();
+}

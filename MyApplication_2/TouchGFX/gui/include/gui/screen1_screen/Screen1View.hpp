@@ -22,6 +22,15 @@ public:
     void triggerVictory();
     void addScore(int amount);
 
+    enum SoundEffect {
+        SOUND_HIT_ENEMY,
+        SOUND_HIT_BARRIER,
+        SOUND_ENEMY_HIT_BARRIER,
+        SOUND_ENEMY_HIT_PLAYER
+    };
+
+    void playSoundEffect(SoundEffect effect);
+
 
 protected:
 protected:
@@ -126,6 +135,10 @@ protected:
     // Tick timing
     uint16_t tickCount;
     uint8_t speedMultiplier;
+
+    //sound
+    void buzzerOn();
+    void buzzerOff();
 };
 
 #endif // SCREEN1VIEW_HPP
