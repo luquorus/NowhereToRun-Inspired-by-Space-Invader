@@ -61,7 +61,10 @@ The game is developed using **FreeRTOS** for multitasking and **TouchGFX** for s
 ## Authors
 
 - **Nguyễn Lan Nhi** – 20225991  
-- **Bùi Hà My** – 20225987  
+- **Bùi Hà My** – 20225987
+
+## Artist
+Chibi character models used in this project were illustrated by artist **Linda Evans** (Facebook). We have obtained permission to use the artwork for non-commercial, educational purposes as part of this course project.
 
 Instructor: **Ph.D. Ngô Lam Trung**
 
